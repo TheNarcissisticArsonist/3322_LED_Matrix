@@ -5,7 +5,7 @@ from scipy import misc
 import sys
 
 imgArray = misc.imread(sys.argv[1])
-#varName = sys.argv[2]
+varName = sys.argv[2]
 
 colorArray = []
 
@@ -17,7 +17,7 @@ for i in range(len(imgArray)):
         b = imgArray[i][j][2]
         colorArray[i].append([r, g, b])
 
-codedArray = "int color[" + str(len(imgArray)) + "][" + str(len(imgArray[0])) + "][3] = {"
+codedArray = "int " + varName + "[" + str(len(imgArray)) + "][" + str(len(imgArray[0])) + "][3] = {"
 for i in range(len(colorArray)):
     codedArray += "{"
     for j in range(len(colorArray[i])):
