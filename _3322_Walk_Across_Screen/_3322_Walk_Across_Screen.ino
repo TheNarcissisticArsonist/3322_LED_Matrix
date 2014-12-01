@@ -52,10 +52,9 @@ void empty() {
 }
 
 void setup() {
-  
+  matrix.begin();
 }
 void loop() {
-  matrix.begin();
   int dR = 0;
   int del = 40;
   delay(1000);
