@@ -7,6 +7,9 @@ import sys
 imgArray = misc.imread(sys.argv[1])
 varName = sys.argv[2]
 
+imgSizeRow = 0
+imgSizeCol = 0
+
 colorArray = []
 
 for i in range(len(imgArray)):
@@ -17,10 +20,12 @@ for i in range(len(imgArray)):
         b = imgArray[i][j][2]
         colorArray[i].append([r, g, b])
 
-codedArray = "int " + varName + "[" + str(len(imgArray)) + "][" + str(len(imgArray[0])) + "][3] = {"
+codedArray = "int " + varName + "[][" + str(len(imgArray[0])) + "][3] = {"
 for i in range(len(colorArray)):
+    imgSizeRow += 1
     codedArray += "{"
     for j in range(len(colorArray[i])):
+        imgSizeCol += 1
         if j+1 == len(colorArray[i]):
             codedArray += "{" + str(colorArray[i][j][0]) + ", " + str(colorArray[i][j][1]) + ", " + str(colorArray[i][j][2]) + "}"
         else:
@@ -29,5 +34,8 @@ for i in range(len(colorArray)):
         codedArray += "}"
     else:
         codedArray += "}, "
+        imgSizeCol = 0
 codedArray += "};"
 print codedArray
+print "int " + varName + "Cols = " + str(imgSizeCol) + ";"
+print "int " + varName + "Rows = " + str(imgSizeRow) + ";"
