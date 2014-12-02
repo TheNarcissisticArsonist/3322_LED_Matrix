@@ -1,0 +1,19 @@
+This is arduino code written by members of Team 3322, Eagle Imperium.
+
+It was built using the following:
+http://www.adafruit.com/products/420
+http://www.adafruit.com/products/50
+
+It requires a 5V 2A power supply.
+
+These programs are various permuatitions and such used to draw various things onto the matrix.
+
+------------------------------------------------
+
+convertPictureToCode.py uses numpy and scipy
+All of the .ino files use the Adafruit LED matrix library:
+https://learn.adafruit.com/32x16-32x32-rgb-led-matrix/downloads
+More information can be found here:
+https://learn.adafruit.com/32x16-32x32-rgb-led-matrix/
+
+------------------------------------------------
