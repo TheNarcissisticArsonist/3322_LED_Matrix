@@ -16,8 +16,8 @@ RGBmatrixPanel matrix(A, B, C, CLK, LAT, OE, false);
 */
 double colorDivisor = 256/7;
 
-//Change c below to the number of columns in the drawing
-void drawPicture(unsigned char picture[][c][3], int row, int col, int width, int height) {
+//Change picture[][       ][3] below to the number of columns in the drawing. Leave the first one blank!
+void drawPicture(unsigned char picture[][       ][3], int row, int col, int width, int height) {
   for(int i=0; i<height; i++) {
     for(int j=0; j<width; j++) {
       matrix.drawPixel(col+j, row+i, matrix.Color333((int)picture[i][j][0]/colorDivisor, (int)picture[i][j][1]/colorDivisor, (int)picture[i][j][2]/colorDivisor));
@@ -27,7 +27,8 @@ void drawPicture(unsigned char picture[][c][3], int row, int col, int width, int
 
 void setup() {
   matrix.begin();
-  drawPicture(yolo, 0, 0, yoloCols, yoloRows);
+  //Insert arguments based off variable names and the function definition above
+  drawPicture(    , 0, 0,      ,       );
 }
 void loop() {
 
