@@ -20,7 +20,7 @@ for i in range(len(imgArray)):
         b = imgArray[i][j][2]
         colorArray[i].append([r, g, b])
 
-codedArray = "int " + varName + "[][" + str(len(imgArray[0])) + "][3] = {"
+codedArray = "unsigned char " + varName + "[][" + str(len(imgArray[0])) + "][3] = {"
 for i in range(len(colorArray)):
     imgSizeRow += 1
     codedArray += "{"
