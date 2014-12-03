@@ -1,0 +1,27 @@
+These are instructions on how to draw a pixel onto the LED matrix.
+This assumes you already have it wired and powered. If you need help with that, go here:
+https://learn.adafruit.com/32x16-32x32-rgb-led-matrix/
+
+You will also need to have a little familiarity with a command-line interface.
+Instructions are written for mac, but windows shouldn't be too different.
+
+
+First, you need to select a picture to convert. I recommend something smaller than your matrix, as it will only display the top-left part if the picture is too big.
+Next, you need to download the program. Keep in mind where you put the folder.
+Next, you need to go into the terminal. When entering the commands, remove the $ before them.
+
+First Command:
+$ cd FILE_PATH
+Where FILE_PATH is the file path to convertPictureToCode.py
+It should look something like /Users/MYNAME/Downloads/...
+
+Second Command:
+$ ls
+You should see convertPictureToCode.py in the list.
+
+Third Command:
+$ python convertPictureToCode.py FILE_PATH VAR_NAME
+Where FILE_PATH is the file path to the picture you wish to convert
+and VAR_NAME is what you want the variable to be named.
+
+Then, just copy and paste the code that's printed out into the arduino and fill in a couple of blanks with the variable name, and you're good!
