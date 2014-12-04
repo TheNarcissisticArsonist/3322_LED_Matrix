@@ -1,4 +1,15 @@
 #!/usr/bin/python
+
+"""
+This program converts an image into a C string that can be read by Picture_To_Matrix.ino
+
+Command line arguments:
+python convertPictureToCode.py ARG1 ARG2
+Where ARG1 is the filepath to the picture and ARG2 is the name of the variable for the array you get.
+
+Just copy and paste the output into your code, and you're good to go!
+"""
+
 import numpy
 import scipy
 from scipy import misc
