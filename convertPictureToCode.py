@@ -3,6 +3,7 @@ import numpy
 import scipy
 from scipy import misc
 import sys
+import math
 
 imgArray = misc.imread(sys.argv[1])
 varName = sys.argv[2]
@@ -25,9 +26,12 @@ for i in range(len(colorArray)):
     imgSizeRow += 1
     codedArray += "{"
     for j in range(len(colorArray[i])):
+        r = math.floor((colorArray[i][j][0] * 7)/ 256)
+        g = math.floor((colorArray[i][j][1] * 7)/ 256)
+        b = math.floor((colorArray[i][j][2] * 7)/ 256)
         imgSizeCol += 1
         if j+1 == len(colorArray[i]):
-            codedArray += "{" + str(colorArray[i][j][0]) + ", " + str(colorArray[i][j][1]) + ", " + str(colorArray[i][j][2]) + "}"
+            codedArray += "{" + str(r) + ", " + str(b) + ", " + str(c) + "}"
         else:
             codedArray += "{" + str(colorArray[i][j][0]) + ", " + str(colorArray[i][j][1]) + ", " + str(colorArray[i][j][2]) + "}, "
     if i+1 == len(colorArray):
