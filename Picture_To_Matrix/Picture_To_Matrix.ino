@@ -19,7 +19,7 @@ RGBmatrixPanel matrix(A, B, C, CLK, LAT, OE, false);
 void drawPicture(unsigned char picture[][ ][3], int row, int col, int width, int height) {
   for(int i=0; i<height; i++) {
     for(int j=0; j<width; j++) {
-      matrix.drawPixel(col+j, row+i, matrix.Color333(picture[i][j][0], picture[i][j][1], picture[i][j][2]));
+      matrix.drawPixel(col+j, row+i, (int)matrix.Color333(picture[i][j][0], (int)picture[i][j][1], (int)picture[i][j][2]));
     }
   }
 }
