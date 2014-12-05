@@ -27,6 +27,18 @@ void drawPicture(unsigned char picture[][ ][3], int row, int col, int width, int
   }
 }
 
+void drawPictureSingleColor(unsigned char picture[][ ][3], int row, int col, int width, int height, int colorR, int colorG, int colorB) {
+  matrix.fillScreen(matrix.Color333(0, 0, 0));
+  unsigned short color = matrix.Color333(colorR, colorG, colorB);
+  for(int i=0; i<height; i++) {
+    for(int j=0; j<height; j++) {
+      if(picture[i][j][0] > 0 && picture[i][j][1] > 0 && picture[i][j][2] > 0) {
+        matrix.drawPixel(col+j, row+i, color);
+      }
+    }
+  }
+}
+
 void setup() {
   matrix.begin();
   //Insert arguments based off variable names and the function definition above
