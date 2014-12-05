@@ -17,6 +17,7 @@ RGBmatrixPanel matrix(A, B, C, CLK, LAT, OE, false);
 
 //Change picture[][ ][3] below to the number of columns in the drawing. Leave the first one blank!
 void drawPicture(unsigned char picture[][ ][3], int row, int col, int width, int height) {
+  matrix.fillScreen(matrix.Color333(0, 0, 0));
   for(int i=0; i<height; i++) {
     for(int j=0; j<width; j++) {
       if(picture[i][j][0] > 0 && picture[i][j][1] > 0 && picture[i][j][2] > 0) {
