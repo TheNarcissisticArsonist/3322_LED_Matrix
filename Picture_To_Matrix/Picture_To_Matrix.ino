@@ -11,6 +11,7 @@
 RGBmatrixPanel matrix(A, B, C, CLK, LAT, OE, false);
 
 // | Insert the matrix from convertPictureToCode.py here
+// | The variable name used in this program is picture[][][], but you can change it.
 /* V
 
 */
