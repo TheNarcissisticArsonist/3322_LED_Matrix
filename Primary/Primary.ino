@@ -315,8 +315,8 @@ void goEagles(int c, int r) {
   matrix.drawPixel(c+6, r+3, wC);
   matrix.drawPixel(c+6, r+4, wC);
   matrix.drawPixel(c+6, r+5, yC);
-  matrix.drawPixel(c+6, r+7, r);
-  matrix.drawPixel(c+6, r+8, r);
+  matrix.drawPixel(c+6, r+7, rC);
+  matrix.drawPixel(c+6, r+8, rC);
   matrix.drawPixel(c+6, r+9, dB);
   matrix.drawPixel(c+6, r+11, rC);
   matrix.drawPixel(c+6, r+12, rC);
@@ -574,7 +574,7 @@ void loop() {
   switch(whichOne) {
     case 1:
       delay(1000);
-      for(int n=1; n<=4; n++) {
+      for(int n=1; n<=5; n++) {
         for(int i=32; i>-28; i--) {
           drawCol(i, dR, c1_8, 2, cc1_8);
           drawCol(i+1, dR, c2_3_4_9_10_11, 3, cc2_3_4_9_10_11);
@@ -610,7 +610,7 @@ void loop() {
       }
       break;
     case 2:
-      for(int n=1; n<=6; n++) {
+      for(int n=1; n<=5; n++) {
         eagle(0, 0);
         e3322(0, 0);
         delay(750);
@@ -619,7 +619,7 @@ void loop() {
       }
        break;
     case 3:
-       for(int n=1; n<=6; n++) {
+       for(int n=1; n<=5; n++) {
         goEagles(0, 0);
         delay(750);
         empty();
@@ -627,7 +627,7 @@ void loop() {
       }
       break;
     case 4:
-      for(int n=1; n<=4; n++) {
+      for(int n=1; n<=5; n++) {
         for(int x = 31; x >= -40; x--) {
             ic1_8(x, 0);
             ic2_3_4_9_10_11(x + 1, 0);
