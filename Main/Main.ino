@@ -567,11 +567,11 @@ void setup() {
 }
 
 void loop() {
+  int del = 40;
   long whichOne = (int)random(1, 4);
   switch(whichOne) {
     case 1:
       int dR = 0;
-      int del = 40;
       delay(1000);
       for(int i=32; i>-28; i--) {
         drawCol(i, dR, c1_8, 2, cc1_8);
@@ -607,7 +607,10 @@ void loop() {
       }
       break;
     case 2:
-      //Eagles 3322
+      eagle(0, 0);
+      e3322(0, 0);
+      delay(del);
+      empty();
       break;
     case 3:
       //Go Eagles
