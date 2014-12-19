@@ -17,19 +17,11 @@ unsigned short rC = matrix.Color333(7, 2, 0);
 unsigned short w = matrix.Color333(0, 0, 0);
 
 void goEagles(int c, int r) {
-  /*
-  matrix.drawPixel(c+1, 0, rB); //Regular Blue DONE
-  matrix.drawPixel(c+0, 2, dB); //Dark Blue DONE
-  matrix.drawPixel(c+0, 4, cB); //Columbia Blue DONE
-  matrix.drawPixel(c+4, 5, y); //Yellow DONE
-  matrix.drawPixel(c+6, 7, r); //Dark Red DONE
-  matrix.drawPixel(c+6, 3, w); //White
-  */
   matrix.drawPixel(c+0, r+2, dB);
   matrix.drawPixel(c+0, r+4, cB);
   matrix.drawPixel(c+0, r+6, rB);
   matrix.drawPixel(c+0, r+9, dB);
-  
+
   matrix.drawPixel(c+1, r+1, rB);
   matrix.drawPixel(c+1, r+3, dB);
   matrix.drawPixel(c+1, r+4, cB);
@@ -38,14 +30,14 @@ void goEagles(int c, int r) {
   matrix.drawPixel(c+1, r+7, rB);
   matrix.drawPixel(c+1, r+8, dB);
   matrix.drawPixel(c+1, r+9, dB);
-  
+
   matrix.drawPixel(c+2, r+2, rB);
   matrix.drawPixel(c+2, r+3, dB);
   matrix.drawPixel(c+2, r+4, dB);
   matrix.drawPixel(c+2, r+5, cB);
   matrix.drawPixel(c+2, r+7, rB);
   matrix.drawPixel(c+2, r+8, dB);
-  
+
   matrix.drawPixel(c+3, r+1, cB);
   matrix.drawPixel(c+3, r+2, cB);
   matrix.drawPixel(c+3, r+3, rB);
@@ -57,7 +49,7 @@ void goEagles(int c, int r) {
   matrix.drawPixel(c+3, r+9, rB);
   matrix.drawPixel(c+3, r+10, cB);
   matrix.drawPixel(c+3, r+15, y);
-  
+
   matrix.drawPixel(c+4, r+0, cB);
   matrix.drawPixel(c+4, r+5, y);
   matrix.drawPixel(c+4, r+6, dB);
@@ -66,7 +58,7 @@ void goEagles(int c, int r) {
   matrix.drawPixel(c+4, r+9, rB);
   matrix.drawPixel(c+4, r+13, rC);
   matrix.drawPixel(c+4, r+14, y);
-  
+
   matrix.drawPixel(c+5, r+4, y);
   matrix.drawPixel(c+5, r+5, y);
   matrix.drawPixel(c+5, r+7, dB);
@@ -76,7 +68,7 @@ void goEagles(int c, int r) {
   matrix.drawPixel(c+5, r+13, rC);
   matrix.drawPixel(c+5, r+14, y);
   matrix.drawPixel(c+5, r+15, y);
-  
+
   matrix.drawPixel(c+6, r+3, w);
   matrix.drawPixel(c+6, r+4, w);
   matrix.drawPixel(c+6, r+5, y);
@@ -85,7 +77,7 @@ void goEagles(int c, int r) {
   matrix.drawPixel(c+6, r+9, dB);
   matrix.drawPixel(c+6, r+11, rC);
   matrix.drawPixel(c+6, r+12, rC);
-  
+
   matrix.drawPixel(c+7, r+3, w);
   matrix.drawPixel(c+7, r+4, cB);
   matrix.drawPixel(c+7, r+5, w);
@@ -95,7 +87,7 @@ void goEagles(int c, int r) {
   matrix.drawPixel(c+7, r+9, rC);
   matrix.drawPixel(c+7, r+10, rC);
   matrix.drawPixel(c+7, r+11, rC);
-  
+
   matrix.drawPixel(c+8, r+3, w);
   matrix.drawPixel(c+8, r+4, w);
   matrix.drawPixel(c+8, r+5, w);
@@ -105,7 +97,7 @@ void goEagles(int c, int r) {
   matrix.drawPixel(c+8, r+9, rC);
   matrix.drawPixel(c+8, r+10, rC);
   matrix.drawPixel(c+8, r+11, rC);
-  
+
   matrix.drawPixel(c+9, r+4, w);
   matrix.drawPixel(c+9, r+5, w);
   matrix.drawPixel(c+9, r+6, rC);
@@ -114,7 +106,7 @@ void goEagles(int c, int r) {
   matrix.drawPixel(c+9, r+9, dB);
   matrix.drawPixel(c+9, r+11, rC);
   matrix.drawPixel(c+9, r+12, rC);
-  
+
   matrix.drawPixel(c+10, r+7, dB);
   matrix.drawPixel(c+10, r+8, dB);
   matrix.drawPixel(c+10, r+9, rB);
@@ -122,7 +114,7 @@ void goEagles(int c, int r) {
   matrix.drawPixel(c+10, r+13, rC);
   matrix.drawPixel(c+10, r+14, y);
   matrix.drawPixel(c+10, r+15, y);
-  
+
   matrix.drawPixel(c+11, r+0, cB);
   matrix.drawPixel(c+11, r+6, dB);
   matrix.drawPixel(c+11, r+7, rB);
@@ -131,7 +123,7 @@ void goEagles(int c, int r) {
   matrix.drawPixel(c+11, r+10, cB);
   matrix.drawPixel(c+11, r+13, rC);
   matrix.drawPixel(c+11, r+14, y);
-  
+
   matrix.drawPixel(c+12, r+1, cB);
   matrix.drawPixel(c+12, r+2, cB);
   matrix.drawPixel(c+12, r+3, rB);
@@ -143,7 +135,7 @@ void goEagles(int c, int r) {
   matrix.drawPixel(c+12, r+9, rB);
   matrix.drawPixel(c+12, r+10, cB);
   matrix.drawPixel(c+12, r+15, y);
-  
+
   matrix.drawPixel(c+13, r+2, rB);
   matrix.drawPixel(c+13, r+3, dB);
   matrix.drawPixel(c+13, r+4, dB);
@@ -151,7 +143,7 @@ void goEagles(int c, int r) {
   matrix.drawPixel(c+13, r+7, rB);
   matrix.drawPixel(c+13, r+8, dB);
   matrix.drawPixel(c+13, r+10, rB);
-  
+
   matrix.drawPixel(c+14, r+1, rB);
   matrix.drawPixel(c+14, r+3, dB);
   matrix.drawPixel(c+14, r+4, cB);
@@ -162,13 +154,13 @@ void goEagles(int c, int r) {
   matrix.drawPixel(c+14, r+9, dB);
   matrix.drawPixel(c+14, r+10, rB);
   matrix.drawPixel(c+14, r+11, rB);
-  
+
   matrix.drawPixel(c+15, r+2, dB);
   matrix.drawPixel(c+15, r+4, cB);
   matrix.drawPixel(c+15, r+6, rB);
   matrix.drawPixel(c+15, r+9, dB);
   matrix.drawPixel(c+15, r+11, rB);
-  
+
   matrix.drawPixel(c+18, r+5, cB);
   matrix.drawPixel(c+18, r+6, cB);
   matrix.drawPixel(c+18, r+7, cB);
@@ -179,21 +171,21 @@ void goEagles(int c, int r) {
   matrix.drawPixel(c+18, r+13, cB);
   matrix.drawPixel(c+18, r+14, cB);
   matrix.drawPixel(c+18, r+15, cB);
-  
+
   matrix.drawPixel(c+19, r+5, cB);
   matrix.drawPixel(c+19, r+7, cB);
   matrix.drawPixel(c+19, r+9, cB);
   matrix.drawPixel(c+19, r+15, cB);
-  
+
   matrix.drawPixel(c+20, r+1, cB);
   matrix.drawPixel(c+20, r+2, cB);
   matrix.drawPixel(c+20, r+5, cB);
   matrix.drawPixel(c+20, r+9, cB);
   matrix.drawPixel(c+20, r+15, cB);
-  
+
   matrix.drawPixel(c+21, r+0, cB);
   matrix.drawPixel(c+21, r+3, cB);
-  
+
   matrix.drawPixel(c+22, r+0, cB);
   matrix.drawPixel(c+22, r+2, cB);
   matrix.drawPixel(c+22, r+3, cB);
@@ -206,13 +198,13 @@ void goEagles(int c, int r) {
   matrix.drawPixel(c+22, r+13, cB);
   matrix.drawPixel(c+22, r+14, cB);
   matrix.drawPixel(c+22, r+15, cB);
-  
+
   matrix.drawPixel(c+23, r+5, cB);
   matrix.drawPixel(c+23, r+7, cB);
   matrix.drawPixel(c+23, r+11, cB);
   matrix.drawPixel(c+23, r+13, cB);
   matrix.drawPixel(c+23, r+15, cB);
-  
+
   matrix.drawPixel(c+24, r+1, cB);
   matrix.drawPixel(c+24, r+2, cB);
   matrix.drawPixel(c+24, r+6, cB);
@@ -221,10 +213,10 @@ void goEagles(int c, int r) {
   matrix.drawPixel(c+24, r+9, cB);
   matrix.drawPixel(c+24, r+11, cB);
   matrix.drawPixel(c+24, r+15, cB);
-  
+
   matrix.drawPixel(c+25, r+0, cB);
   matrix.drawPixel(c+25, r+3, cB);
-  
+
   matrix.drawPixel(c+26, r+1, cB);
   matrix.drawPixel(c+26, r+2, cB);
   matrix.drawPixel(c+26, r+6, cB);
@@ -232,24 +224,24 @@ void goEagles(int c, int r) {
   matrix.drawPixel(c+26, r+8, cB);
   matrix.drawPixel(c+26, r+12, cB);
   matrix.drawPixel(c+26, r+15, cB);
-  
+
   matrix.drawPixel(c+27, r+5, cB);
   matrix.drawPixel(c+27, r+9, cB);
   matrix.drawPixel(c+27, r+11, cB);
   matrix.drawPixel(c+27, r+13, cB);
   matrix.drawPixel(c+27, r+15, cB);
-  
+
   matrix.drawPixel(c+28, r+5, cB);
   matrix.drawPixel(c+28, r+7, cB);
   matrix.drawPixel(c+28, r+9, cB);
   matrix.drawPixel(c+28, r+11, cB);
   matrix.drawPixel(c+28, r+14, cB);
-  
+
   matrix.drawPixel(c+29, r+5, cB);
   matrix.drawPixel(c+29, r+7, cB);
   matrix.drawPixel(c+29, r+8, cB);
   matrix.drawPixel(c+29, r+9, cB);
-  
+
   matrix.drawPixel(c+30, r+11, cB);
   matrix.drawPixel(c+30, r+12, cB);
   matrix.drawPixel(c+30, r+13, cB);
@@ -261,5 +253,5 @@ void setup() {
   goEagles(0, 0);
 }
 void loop() {
-  
+
 }
