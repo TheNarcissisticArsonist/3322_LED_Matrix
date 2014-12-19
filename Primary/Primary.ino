@@ -615,7 +615,7 @@ void loop() {
         e3322(0, 0);
         delay(750);
         empty();
-        delay(250);
+        delay(500);
       }
        break;
     case 3:
@@ -623,7 +623,7 @@ void loop() {
         goEagles(0, 0);
         delay(750);
         empty();
-        delay(250);
+        delay(500);
       }
       break;
     case 4:
