@@ -568,82 +568,91 @@ void setup() {
 }
 
 void loop() {
-  int del = 40;
+  int del = 1000;
   int dR = 0;
   int whichOne = (int)random(1, 4);
   switch(whichOne) {
     case 1:
       delay(1000);
-      for(int i=32; i>-28; i--) {
-        drawCol(i, dR, c1_8, 2, cc1_8);
-        drawCol(i+1, dR, c2_3_4_9_10_11, 3, cc2_3_4_9_10_11);
-        drawCol(i+2, dR, c2_3_4_9_10_11, 3, cc2_3_4_9_10_11);
-        drawCol(i+3, dR, c2_3_4_9_10_11, 3, cc2_3_4_9_10_11);
-        drawCol(i+4, dR, c5_12, 7, cc5_12);
-        drawCol(i+5, dR, c6_13, 8, cc6_13);
+      for(int n=1; n < 4; n++) {
+        for(int i=32; i>-28; i--) {
+          drawCol(i, dR, c1_8, 2, cc1_8);
+          drawCol(i+1, dR, c2_3_4_9_10_11, 3, cc2_3_4_9_10_11);
+          drawCol(i+2, dR, c2_3_4_9_10_11, 3, cc2_3_4_9_10_11);
+          drawCol(i+3, dR, c2_3_4_9_10_11, 3, cc2_3_4_9_10_11);
+          drawCol(i+4, dR, c5_12, 7, cc5_12);
+          drawCol(i+5, dR, c6_13, 8, cc6_13);
 
-        drawCol(i+7, dR, c1_8, 2, cc1_8);
-        drawCol(i+8, dR, c2_3_4_9_10_11, 3, cc2_3_4_9_10_11);
-        drawCol(i+9, dR, c2_3_4_9_10_11, 3, cc2_3_4_9_10_11);
-        drawCol(i+10, dR, c2_3_4_9_10_11, 3, cc2_3_4_9_10_11);
-        drawCol(i+11, dR, c5_12, 7, cc5_12);
-        drawCol(i+12, dR, c6_13, 8, cc6_13);
-
-        drawCol(i+14, dR, c15_22, 5, cc15_22);
-        drawCol(i+15, dR, c16_23, 5, cc16_23);
-        drawCol(i+16, dR, c17_24, 4, cc17_24);
-        drawCol(i+17, dR, c18_25, 4, cc18_25);
-        drawCol(i+18, dR, c19_26, 5, cc19_26);
-        drawCol(i+19, dR, c20_27, 5, cc20_27);
-
-        drawCol(i+21, dR, c15_22, 5, cc15_22);
-        drawCol(i+22, dR, c16_23, 5, cc16_23);
-        drawCol(i+23, dR, c17_24, 4, cc17_24);
-        drawCol(i+24, dR, c18_25, 4, cc18_25);
-        drawCol(i+25, dR, c19_26, 5, cc19_26);
-        drawCol(i+26, dR, c20_27, 5, cc20_27);
-        empty();
+          drawCol(i+7, dR, c1_8, 2, cc1_8);
+          drawCol(i+8, dR, c2_3_4_9_10_11, 3, cc2_3_4_9_10_11);
+          drawCol(i+9, dR, c2_3_4_9_10_11, 3, cc2_3_4_9_10_11);
+          drawCol(i+10, dR, c2_3_4_9_10_11, 3, cc2_3_4_9_10_11);
+          drawCol(i+11, dR, c5_12, 7, cc5_12);
+          drawCol(i+12, dR, c6_13, 8, cc6_13);
+  
+          drawCol(i+14, dR, c15_22, 5, cc15_22);
+          drawCol(i+15, dR, c16_23, 5, cc16_23);
+          drawCol(i+16, dR, c17_24, 4, cc17_24);
+          drawCol(i+17, dR, c18_25, 4, cc18_25);
+          drawCol(i+18, dR, c19_26, 5, cc19_26);
+          drawCol(i+19, dR, c20_27, 5, cc20_27);
+  
+          drawCol(i+21, dR, c15_22, 5, cc15_22);
+          drawCol(i+22, dR, c16_23, 5, cc16_23);
+          drawCol(i+23, dR, c17_24, 4, cc17_24);
+          drawCol(i+24, dR, c18_25, 4, cc18_25);
+          drawCol(i+25, dR, c19_26, 5, cc19_26);
+          drawCol(i+26, dR, c20_27, 5, cc20_27);
+          delay(40);
+          empty();
+        }
+        delay(1000);
       }
       break;
     case 2:
       eagle(0, 0);
       e3322(0, 0);
+      delay(5000);
       empty();
       break;
     case 3:
       goEagles(0, 0);
+      delay(5000);
       empty();
       break;
     case 4:
-      for(int x = 31; x >= -40; x--) {
-          empty();
-          ic1_8(x, 0);
-          ic2_3_4_9_10_11(x + 1, 0);
-          ic2_3_4_9_10_11(x + 2, 0);
-          ic2_3_4_9_10_11(x + 3, 0);
-          ic5_12(x + 4, 0);
-          ic6_13(x + 5, 0);
-          ic1_8(x + 7, 0);
-          ic2_3_4_9_10_11(x + 8, 0);
-          ic2_3_4_9_10_11(x + 9, 0);
-          ic2_3_4_9_10_11(x + 10, 0);
-          ic5_12(x + 11, 0);
-          ic6_13(x + 12, 0);
-          //33 /\
-          //22 \/
-          ic15_22(x + 14, 0);
-          ic16_23(x + 15, 0);
-          ic17_24(x + 16, 0);
-          ic18_25(x + 17, 0);
-          ic19_26(x + 18, 0);
-          ic20_27(x + 19, 0);
-          ic15_22(x + 21, 0);
-          ic16_23(x + 22, 0);
-          ic17_24(x + 23, 0);
-          ic18_25(x + 24, 0);
-          ic19_26(x + 25, 0);
-          ic20_27(x + 26, 0);
-          delay(20);
+      for(int n=1; n<4; n++) {
+        for(int x = 31; x >= -40; x--) {
+            ic1_8(x, 0);
+            ic2_3_4_9_10_11(x + 1, 0);
+            ic2_3_4_9_10_11(x + 2, 0);
+            ic2_3_4_9_10_11(x + 3, 0);
+            ic5_12(x + 4, 0);
+            ic6_13(x + 5, 0);
+            ic1_8(x + 7, 0);
+            ic2_3_4_9_10_11(x + 8, 0);
+            ic2_3_4_9_10_11(x + 9, 0);
+            ic2_3_4_9_10_11(x + 10, 0);
+            ic5_12(x + 11, 0);
+            ic6_13(x + 12, 0);
+            //33 /\
+            //22 \/
+            ic15_22(x + 14, 0);
+            ic16_23(x + 15, 0);
+            ic17_24(x + 16, 0);
+            ic18_25(x + 17, 0);
+            ic19_26(x + 18, 0);
+            ic20_27(x + 19, 0);
+            ic15_22(x + 21, 0);
+            ic16_23(x + 22, 0);
+            ic17_24(x + 23, 0);
+            ic18_25(x + 24, 0);
+            ic19_26(x + 25, 0);
+            ic20_27(x + 26, 0);
+            delay(40);
+            empty();
+          }
+          delay(1000);
         }
       break;
   }
