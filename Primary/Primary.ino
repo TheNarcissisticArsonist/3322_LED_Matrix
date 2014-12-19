@@ -574,7 +574,7 @@ void loop() {
   switch(whichOne) {
     case 1:
       delay(1000);
-      for(int n=1; n < 4; n++) {
+      for(int n=1; n<=4; n++) {
         for(int i=32; i>-28; i--) {
           drawCol(i, dR, c1_8, 2, cc1_8);
           drawCol(i+1, dR, c2_3_4_9_10_11, 3, cc2_3_4_9_10_11);
@@ -610,18 +610,24 @@ void loop() {
       }
       break;
     case 2:
-      eagle(0, 0);
-      e3322(0, 0);
-      delay(5000);
-      empty();
-      break;
+      for(int n=1; n<=6; n++) {
+        eagle(0, 0);
+        e3322(0, 0);
+        delay(500);
+        empty();
+        delay(500);
+      }
+       break;
     case 3:
-      goEagles(0, 0);
-      delay(5000);
-      empty();
+       for(int n=1; n<=6; n++) {
+        goEagles(0, 0);
+        delay(500);
+        empty();
+        delay(500);
+      }
       break;
     case 4:
-      for(int n=1; n<4; n++) {
+      for(int n=1; n<=4; n++) {
         for(int x = 31; x >= -40; x--) {
             ic1_8(x, 0);
             ic2_3_4_9_10_11(x + 1, 0);
