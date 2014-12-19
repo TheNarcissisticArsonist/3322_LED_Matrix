@@ -22,7 +22,7 @@ void drawPictureSingleColor(unsigned char picture[][ ][3], int row, int col, int
   unsigned short color = matrix.Color333(colorR, colorG, colorB);
   for(int i=0; i<height; i++) {
     for(int j=0; j<height; j++) {
-      if(picture[i][j][0] > 0 && picture[i][j][1] > 0 && picture[i][j][2] > 0) {
+      if(picture[i][j][0] > 0 || picture[i][j][1] > 0 || picture[i][j][2] > 0) {
         matrix.drawPixel(col+j, row+i, color);
       }
     }
