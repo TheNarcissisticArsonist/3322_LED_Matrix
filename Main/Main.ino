@@ -570,7 +570,41 @@ void loop() {
   long whichOne = (int)random(1, 4);
   switch(whichOne) {
     case 1:
-      //3322
+      int dR = 0;
+      int del = 40;
+      delay(1000);
+      for(int i=32; i>-28; i--) {
+        drawCol(i, dR, c1_8, 2, cc1_8);
+        drawCol(i+1, dR, c2_3_4_9_10_11, 3, cc2_3_4_9_10_11);
+        drawCol(i+2, dR, c2_3_4_9_10_11, 3, cc2_3_4_9_10_11);
+        drawCol(i+3, dR, c2_3_4_9_10_11, 3, cc2_3_4_9_10_11);
+        drawCol(i+4, dR, c5_12, 7, cc5_12);
+        drawCol(i+5, dR, c6_13, 8, cc6_13);
+
+        drawCol(i+7, dR, c1_8, 2, cc1_8);
+        drawCol(i+8, dR, c2_3_4_9_10_11, 3, cc2_3_4_9_10_11);
+        drawCol(i+9, dR, c2_3_4_9_10_11, 3, cc2_3_4_9_10_11);
+        drawCol(i+10, dR, c2_3_4_9_10_11, 3, cc2_3_4_9_10_11);
+        drawCol(i+11, dR, c5_12, 7, cc5_12);
+        drawCol(i+12, dR, c6_13, 8, cc6_13);
+
+        drawCol(i+14, dR, c15_22, 5, cc15_22);
+        drawCol(i+15, dR, c16_23, 5, cc16_23);
+        drawCol(i+16, dR, c17_24, 4, cc17_24);
+        drawCol(i+17, dR, c18_25, 4, cc18_25);
+        drawCol(i+18, dR, c19_26, 5, cc19_26);
+        drawCol(i+19, dR, c20_27, 5, cc20_27);
+
+        drawCol(i+21, dR, c15_22, 5, cc15_22);
+        drawCol(i+22, dR, c16_23, 5, cc16_23);
+        drawCol(i+23, dR, c17_24, 4, cc17_24);
+        drawCol(i+24, dR, c18_25, 4, cc18_25);
+        drawCol(i+25, dR, c19_26, 5, cc19_26);
+        drawCol(i+26, dR, c20_27, 5, cc20_27);
+
+        delay(del);
+        empty();
+      }
       break;
     case 2:
       //Eagles 3322
