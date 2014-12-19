@@ -613,17 +613,17 @@ void loop() {
       for(int n=1; n<=6; n++) {
         eagle(0, 0);
         e3322(0, 0);
-        delay(500);
+        delay(750);
         empty();
-        delay(500);
+        delay(250);
       }
        break;
     case 3:
        for(int n=1; n<=6; n++) {
         goEagles(0, 0);
-        delay(500);
+        delay(750);
         empty();
-        delay(500);
+        delay(250);
       }
       break;
     case 4:
