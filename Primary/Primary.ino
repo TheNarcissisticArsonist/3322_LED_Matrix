@@ -15,6 +15,7 @@ unsigned short sB = matrix.Color333(0, 2, 7);
 unsigned short yC = matrix.Color333(7, 7, 0);
 unsigned short rC = matrix.Color333(7, 2, 0);
 unsigned short wC = matrix.Color333(7, 7, 7);
+unsigned short r  = matrix.Color333(7, 0, 0);
 
 //Standard Functions:
 void drawCol(int c, int r, int column[], int length, unsigned short color[]) {
@@ -290,39 +291,39 @@ void goEagles(int c, int r) {
   matrix.drawPixel(c+3, r+8, dB);
   matrix.drawPixel(c+3, r+9, rB);
   matrix.drawPixel(c+3, r+10, sB);
-  matrix.drawPixel(c+3, r+15, y);
+  matrix.drawPixel(c+3, r+15, yC);
 
   matrix.drawPixel(c+4, r+0, sB);
-  matrix.drawPixel(c+4, r+5, y);
+  matrix.drawPixel(c+4, r+5, yC);
   matrix.drawPixel(c+4, r+6, dB);
   matrix.drawPixel(c+4, r+7, rB);
   matrix.drawPixel(c+4, r+8, dB);
   matrix.drawPixel(c+4, r+9, rB);
   matrix.drawPixel(c+4, r+13, rC);
-  matrix.drawPixel(c+4, r+14, y);
+  matrix.drawPixel(c+4, r+14, yC);
 
-  matrix.drawPixel(c+5, r+4, y);
-  matrix.drawPixel(c+5, r+5, y);
+  matrix.drawPixel(c+5, r+4, yC);
+  matrix.drawPixel(c+5, r+5, yC);
   matrix.drawPixel(c+5, r+7, dB);
   matrix.drawPixel(c+5, r+8, dB);
   matrix.drawPixel(c+5, r+9, rB);
   matrix.drawPixel(c+5, r+12, rC);
   matrix.drawPixel(c+5, r+13, rC);
-  matrix.drawPixel(c+5, r+14, y);
-  matrix.drawPixel(c+5, r+15, y);
+  matrix.drawPixel(c+5, r+14, yC);
+  matrix.drawPixel(c+5, r+15, yC);
 
-  matrix.drawPixel(c+6, r+3, w);
-  matrix.drawPixel(c+6, r+4, w);
-  matrix.drawPixel(c+6, r+5, y);
+  matrix.drawPixel(c+6, r+3, wC);
+  matrix.drawPixel(c+6, r+4, wC);
+  matrix.drawPixel(c+6, r+5, yC);
   matrix.drawPixel(c+6, r+7, r);
   matrix.drawPixel(c+6, r+8, r);
   matrix.drawPixel(c+6, r+9, dB);
   matrix.drawPixel(c+6, r+11, rC);
   matrix.drawPixel(c+6, r+12, rC);
 
-  matrix.drawPixel(c+7, r+3, w);
+  matrix.drawPixel(c+7, r+3, wC);
   matrix.drawPixel(c+7, r+4, sB);
-  matrix.drawPixel(c+7, r+5, w);
+  matrix.drawPixel(c+7, r+5, wC);
   matrix.drawPixel(c+7, r+6, rC);
   matrix.drawPixel(c+7, r+7, rC);
   matrix.drawPixel(c+7, r+8, rC);
@@ -330,9 +331,9 @@ void goEagles(int c, int r) {
   matrix.drawPixel(c+7, r+10, rC);
   matrix.drawPixel(c+7, r+11, rC);
 
-  matrix.drawPixel(c+8, r+3, w);
-  matrix.drawPixel(c+8, r+4, w);
-  matrix.drawPixel(c+8, r+5, w);
+  matrix.drawPixel(c+8, r+3, wC);
+  matrix.drawPixel(c+8, r+4, wC);
+  matrix.drawPixel(c+8, r+5, wC);
   matrix.drawPixel(c+8, r+6, rC);
   matrix.drawPixel(c+8, r+7, rC);
   matrix.drawPixel(c+8, r+8, rC);
@@ -340,8 +341,8 @@ void goEagles(int c, int r) {
   matrix.drawPixel(c+8, r+10, rC);
   matrix.drawPixel(c+8, r+11, rC);
 
-  matrix.drawPixel(c+9, r+4, w);
-  matrix.drawPixel(c+9, r+5, w);
+  matrix.drawPixel(c+9, r+4, wC);
+  matrix.drawPixel(c+9, r+5, wC);
   matrix.drawPixel(c+9, r+6, rC);
   matrix.drawPixel(c+9, r+7, rC);
   matrix.drawPixel(c+9, r+8, rC);
@@ -354,8 +355,8 @@ void goEagles(int c, int r) {
   matrix.drawPixel(c+10, r+9, rB);
   matrix.drawPixel(c+10, r+12, rC);
   matrix.drawPixel(c+10, r+13, rC);
-  matrix.drawPixel(c+10, r+14, y);
-  matrix.drawPixel(c+10, r+15, y);
+  matrix.drawPixel(c+10, r+14, yC);
+  matrix.drawPixel(c+10, r+15, yC);
 
   matrix.drawPixel(c+11, r+0, sB);
   matrix.drawPixel(c+11, r+6, dB);
@@ -364,7 +365,7 @@ void goEagles(int c, int r) {
   matrix.drawPixel(c+11, r+9, rB);
   matrix.drawPixel(c+11, r+10, sB);
   matrix.drawPixel(c+11, r+13, rC);
-  matrix.drawPixel(c+11, r+14, y);
+  matrix.drawPixel(c+11, r+14, yC);
 
   matrix.drawPixel(c+12, r+1, sB);
   matrix.drawPixel(c+12, r+2, sB);
@@ -376,7 +377,7 @@ void goEagles(int c, int r) {
   matrix.drawPixel(c+12, r+8, dB);
   matrix.drawPixel(c+12, r+9, rB);
   matrix.drawPixel(c+12, r+10, sB);
-  matrix.drawPixel(c+12, r+15, y);
+  matrix.drawPixel(c+12, r+15, yC);
 
   matrix.drawPixel(c+13, r+2, rB);
   matrix.drawPixel(c+13, r+3, dB);
@@ -568,10 +569,10 @@ void setup() {
 
 void loop() {
   int del = 40;
-  long whichOne = (int)random(1, 4);
+  int dR = 0;
+  int whichOne = (int)random(1, 4);
   switch(whichOne) {
     case 1:
-      int dR = 0;
       delay(1000);
       for(int i=32; i>-28; i--) {
         drawCol(i, dR, c1_8, 2, cc1_8);
@@ -601,20 +602,16 @@ void loop() {
         drawCol(i+24, dR, c18_25, 4, cc18_25);
         drawCol(i+25, dR, c19_26, 5, cc19_26);
         drawCol(i+26, dR, c20_27, 5, cc20_27);
-
-        delay(del);
         empty();
       }
       break;
     case 2:
       eagle(0, 0);
       e3322(0, 0);
-      delay(del);
       empty();
       break;
     case 3:
       goEagles(0, 0);
-      delay(del);
       empty();
       break;
     case 4:
@@ -648,9 +645,7 @@ void loop() {
           ic20_27(x + 26, 0);
           delay(20);
         }
-        delay(del);
       break;
-    default:
-      Matrix.fillScreen(Matrix.color333(7, 0, 0));
   }
+  delay(del);
 }
