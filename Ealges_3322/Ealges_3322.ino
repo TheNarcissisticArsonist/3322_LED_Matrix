@@ -12,9 +12,9 @@ RGBmatrixPanel matrix(A, B, C, CLK, LAT, OE, false);
 unsigned short rB = matrix.Color333(0, 0, 7);
 unsigned short dB = matrix.Color333(0, 0, 1);
 unsigned short sB = matrix.Color333(0, 2, 7);
-unsigned short y = matrix.Color333(7, 7, 0);
+unsigned short yC = matrix.Color333(7, 7, 0);
 unsigned short rC = matrix.Color333(7, 2, 0);
-unsigned short w = matrix.Color333(7, 7, 7);
+unsigned short wC = matrix.Color333(7, 7, 7);
 
 void eagle(int c, int r) {
   matrix.drawPixel(c+0, r+2, dB);
@@ -48,39 +48,39 @@ void eagle(int c, int r) {
   matrix.drawPixel(c+3, 8, dB);
   matrix.drawPixel(c+3, 9, rB);
   matrix.drawPixel(c+3, 10, sB);
-  matrix.drawPixel(c+3, 15, y);
+  matrix.drawPixel(c+3, 15, yC);
 
   matrix.drawPixel(c+4, r+0, sB);
-  matrix.drawPixel(c+4, r+5, y);
+  matrix.drawPixel(c+4, r+5, yC);
   matrix.drawPixel(c+4, r+6, dB);
   matrix.drawPixel(c+4, r+7, rB);
   matrix.drawPixel(c+4, r+8, dB);
   matrix.drawPixel(c+4, r+9, rB);
   matrix.drawPixel(c+4, r+13, rC);
-  matrix.drawPixel(c+4, r+14, y);
+  matrix.drawPixel(c+4, r+14, yC);
 
-  matrix.drawPixel(c+5, r+4, y);
-  matrix.drawPixel(c+5, r+5, y);
+  matrix.drawPixel(c+5, r+4, yC);
+  matrix.drawPixel(c+5, r+5, yC);
   matrix.drawPixel(c+5, r+7, dB);
   matrix.drawPixel(c+5, r+8, dB);
   matrix.drawPixel(c+5, r+9, rB);
   matrix.drawPixel(c+5, r+12, rC);
   matrix.drawPixel(c+5, r+13, rC);
-  matrix.drawPixel(c+5, r+14, y);
-  matrix.drawPixel(c+5, r+15, y);
+  matrix.drawPixel(c+5, r+14, yC);
+  matrix.drawPixel(c+5, r+15, yC);
 
-  matrix.drawPixel(c+6, r+3, w);
-  matrix.drawPixel(c+6, r+4, w);
-  matrix.drawPixel(c+6, r+5, y);
+  matrix.drawPixel(c+6, r+3, wC);
+  matrix.drawPixel(c+6, r+4, wC);
+  matrix.drawPixel(c+6, r+5, yC);
   matrix.drawPixel(c+6, r+7, rC);
   matrix.drawPixel(c+6, r+8, rC);
   matrix.drawPixel(c+6, r+9, dB);
   matrix.drawPixel(c+6, r+11, rC);
   matrix.drawPixel(c+6, r+12, rC);
 
-  matrix.drawPixel(c+7, r+3, w);
+  matrix.drawPixel(c+7, r+3, wC);
   matrix.drawPixel(c+7, r+4, sB);
-  matrix.drawPixel(c+7, r+5, w);
+  matrix.drawPixel(c+7, r+5, wC);
   matrix.drawPixel(c+7, r+6, rC);
   matrix.drawPixel(c+7, r+7, rC);
   matrix.drawPixel(c+7, r+8, rC);
@@ -88,9 +88,9 @@ void eagle(int c, int r) {
   matrix.drawPixel(c+7, r+10, rC);
   matrix.drawPixel(c+7, r+11, rC);
 
-  matrix.drawPixel(c+8, r+3, w);
-  matrix.drawPixel(c+8, r+4, w);
-  matrix.drawPixel(c+8, r+5, w);
+  matrix.drawPixel(c+8, r+3, wC);
+  matrix.drawPixel(c+8, r+4, wC);
+  matrix.drawPixel(c+8, r+5, wC);
   matrix.drawPixel(c+8, r+6, rC);
   matrix.drawPixel(c+8, r+7, rC);
   matrix.drawPixel(c+8, r+8, rC);
@@ -98,8 +98,8 @@ void eagle(int c, int r) {
   matrix.drawPixel(c+8, r+10, rC);
   matrix.drawPixel(c+8, r+11, rC);
 
-  matrix.drawPixel(c+9, r+4, w);
-  matrix.drawPixel(c+9, r+5, w);
+  matrix.drawPixel(c+9, r+4, wC);
+  matrix.drawPixel(c+9, r+5, wC);
   matrix.drawPixel(c+9, r+6, rC);
   matrix.drawPixel(c+9, r+7, rC);
   matrix.drawPixel(c+9, r+8, rC);
@@ -112,8 +112,8 @@ void eagle(int c, int r) {
   matrix.drawPixel(c+10, r+9, rB);
   matrix.drawPixel(c+10, r+12, rC);
   matrix.drawPixel(c+10, r+13, rC);
-  matrix.drawPixel(c+10, r+14, y);
-  matrix.drawPixel(c+10, r+15, y);
+  matrix.drawPixel(c+10, r+14, yC);
+  matrix.drawPixel(c+10, r+15, yC);
 
   matrix.drawPixel(c+11, r+0, sB);
   matrix.drawPixel(c+11, r+6, dB);
@@ -121,7 +121,7 @@ void eagle(int c, int r) {
   matrix.drawPixel(c+11, r+8, dB);
   matrix.drawPixel(c+11, r+9, rB);
   matrix.drawPixel(c+11, r+13, rC);
-  matrix.drawPixel(c+11, r+14, y);
+  matrix.drawPixel(c+11, r+14, yC);
 
   matrix.drawPixel(c+12, r+1, sB);
   matrix.drawPixel(c+12, r+2, sB);
@@ -133,7 +133,7 @@ void eagle(int c, int r) {
   matrix.drawPixel(c+12, r+8, dB);
   matrix.drawPixel(c+12, r+9, rB);
   matrix.drawPixel(c+12, r+10, sB);
-  matrix.drawPixel(c+12, r+15, y);
+  matrix.drawPixel(c+12, r+15, yC);
 
   matrix.drawPixel(c+13, r+2, rB);
   matrix.drawPixel(c+13, r+3, dB);
