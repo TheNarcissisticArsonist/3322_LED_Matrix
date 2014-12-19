@@ -17,74 +17,74 @@ void empty() {
 }
 //3s
 void ic1_8(int c, int r) {
-  matrix.drawPixel(c, r+6, b);
-  matrix.drawPixel(c, r+14, b);
+  matrix.drawPixel(c, r+6, sB);
+  matrix.drawPixel(c, r+14, sB);
 }
 void ic2_3_4_9_10_11(int c, int r) {
-  matrix.drawPixel(c, r+5, b);
-  matrix.drawPixel(c, r+10, b);
-  matrix.drawPixel(c, r+15, b);
+  matrix.drawPixel(c, r+5, sB);
+  matrix.drawPixel(c, r+10, sB);
+  matrix.drawPixel(c, r+15, sB);
 }
 void ic5_12(int c, int r) {
-  matrix.drawPixel(c, r+5, b);
-  matrix.drawPixel(c, r+6, b);
-  matrix.drawPixel(c, r+9, b);
-  matrix.drawPixel(c, r+10, b);
-  matrix.drawPixel(c, r+11, b);
-  matrix.drawPixel(c, r+14, b);
-  matrix.drawPixel(c, r+15, b);
+  matrix.drawPixel(c, r+5, sB);
+  matrix.drawPixel(c, r+6, sB);
+  matrix.drawPixel(c, r+9, sB);
+  matrix.drawPixel(c, r+10, sB);
+  matrix.drawPixel(c, r+11, sB);
+  matrix.drawPixel(c, r+14, sB);
+  matrix.drawPixel(c, r+15, sB);
 }
 void ic6_13(int c, int r) {
-  matrix.drawPixel(c, r+6, b);
-  matrix.drawPixel(c, r+7, b);
-  matrix.drawPixel(c, r+8, b);
-  matrix.drawPixel(c, r+9, b);
-  matrix.drawPixel(c, r+11, b);
-  matrix.drawPixel(c, r+12, b);
-  matrix.drawPixel(c, r+13, b);
-  matrix.drawPixel(c, r+14, b);
+  matrix.drawPixel(c, r+6, sB);
+  matrix.drawPixel(c, r+7, sB);
+  matrix.drawPixel(c, r+8, sB);
+  matrix.drawPixel(c, r+9, sB);
+  matrix.drawPixel(c, r+11, sB);
+  matrix.drawPixel(c, r+12, sB);
+  matrix.drawPixel(c, r+13, sB);
+  matrix.drawPixel(c, r+14, sB);
 }
 
 //2s
 void ic15_22(int c, int r) {
-  matrix.drawPixel(c, r+6, b);
-  matrix.drawPixel(c, r+7, b);
-  matrix.drawPixel(c, r+13, b);
-  matrix.drawPixel(c, r+14, b);
-  matrix.drawPixel(c, r+15, b);
+  matrix.drawPixel(c, r+6, sB);
+  matrix.drawPixel(c, r+7, sB);
+  matrix.drawPixel(c, r+13, sB);
+  matrix.drawPixel(c, r+14, sB);
+  matrix.drawPixel(c, r+15, sB);
 }
 void ic16_23(int c, int r) {
-  matrix.drawPixel(c, r+5, b);
-  matrix.drawPixel(c, r+6, b);
-  matrix.drawPixel(c, r+12, b);
-  matrix.drawPixel(c, r+13, b);
-  matrix.drawPixel(c, r+15, b);
+  matrix.drawPixel(c, r+5, sB);
+  matrix.drawPixel(c, r+6, sB);
+  matrix.drawPixel(c, r+12, sB);
+  matrix.drawPixel(c, r+13, sB);
+  matrix.drawPixel(c, r+15, sB);
 }
 void ic17_24(int c, int r) {
-  matrix.drawPixel(c, r+5, b);
-  matrix.drawPixel(c, r+11, b);
-  matrix.drawPixel(c, r+12, b);
-  matrix.drawPixel(c, r+15, b);
+  matrix.drawPixel(c, r+5, sB);
+  matrix.drawPixel(c, r+11, sB);
+  matrix.drawPixel(c, r+12, sB);
+  matrix.drawPixel(c, r+15, sB);
 }
 void ic18_25(int c, int r) {
-  matrix.drawPixel(c, r+5, b);
-  matrix.drawPixel(c, r+10, b);
-  matrix.drawPixel(c, r+11, b);
-  matrix.drawPixel(c, r+15, b);
+  matrix.drawPixel(c, r+5, sB);
+  matrix.drawPixel(c, r+10, sB);
+  matrix.drawPixel(c, r+11, sB);
+  matrix.drawPixel(c, r+15, sB);
 }
 void ic19_26(int c, int r) {
-  matrix.drawPixel(c, r+5, b);
-  matrix.drawPixel(c, r+6, b);
-  matrix.drawPixel(c, r+9, b);
-  matrix.drawPixel(c, r+10, b);
-  matrix.drawPixel(c, r+15, b);
+  matrix.drawPixel(c, r+5, sB);
+  matrix.drawPixel(c, r+6, sB);
+  matrix.drawPixel(c, r+9, sB);
+  matrix.drawPixel(c, r+10, sB);
+  matrix.drawPixel(c, r+15, sB);
 }
 void ic20_27(int c, int r) {
-  matrix.drawPixel(c, r+6, b);
-  matrix.drawPixel(c, r+7, b);
-  matrix.drawPixel(c, r+8, b);
-  matrix.drawPixel(c, r+9, b);
-  matrix.drawPixel(c, r+15, b);
+  matrix.drawPixel(c, r+6, sB);
+  matrix.drawPixel(c, r+7, sB);
+  matrix.drawPixel(c, r+8, sB);
+  matrix.drawPixel(c, r+9, sB);
+  matrix.drawPixel(c, r+15, sB);
 }
 
 void setup() {
