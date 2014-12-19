@@ -564,7 +564,7 @@ void ic20_27(int c, int r) {
 
 void setup() {
   matrix.begin();
-  randomSeed(424242); //THE ANSWER * 3
+  randomSeed(analogRead(5));
 }
 
 void loop() {
