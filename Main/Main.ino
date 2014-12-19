@@ -613,7 +613,9 @@ void loop() {
       empty();
       break;
     case 3:
-      //Go Eagles
+      goEagles(0, 0);
+      delay(del);
+      empty();
       break;
     case 4:
       //Inverse 3322
