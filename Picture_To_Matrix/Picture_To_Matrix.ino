@@ -21,7 +21,7 @@ void drawPicture(unsigned char picture[][ ][3], int row, int col, int width, int
   matrix.fillScreen(matrix.Color333(0, 0, 0));
   for(int i=0; i<height; i++) {
     for(int j=0; j<width; j++) {
-      if(picture[i][j][0] > 0 && picture[i][j][1] > 0 && picture[i][j][2] > 0) {
+      if(picture[i][j][0] > 0 || picture[i][j][1] > 0 || picture[i][j][2] > 0) {
         matrix.drawPixel(col+j, row+i, matrix.Color333(picture[i][j][0], picture[i][j][1], picture[i][j][2]));
       }
     }
