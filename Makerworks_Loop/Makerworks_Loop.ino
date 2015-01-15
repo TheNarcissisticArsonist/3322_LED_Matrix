@@ -37,6 +37,19 @@ unsigned short c14[16] = {sB, sB, sB, sB, sB, sB, sB, sB, sB, sB, sB, sB, sB, sB
 
 unsigned short c15[16] = {b, b, b, b, b, b, b, b, b, b, b, b, b, b, b, b};
 
+unsigned short c16[16] = {b, b, b, r, r, r, r, r, r, r, r, r, r, r, r, r};
+unsigned short c17[16] = {b, b, r, r, r, r, r, r, r, r, r, r, r, r, r, r};
+unsigned short c18[16] = {b, r, r, r, r, r, r, r, r, r, r, r, r, r, r, r};
+unsigned short c19[16] = {r, r, r, r, b, b, b, b, r, r, b, b, b, b, b, b};
+unsigned short c20[16] = {r, r, r, r, b, b, b, b, r, r, b, b, b, b, b, b};
+unsigned short c21[16] = {r, r, r, r, b, b, b, b, r, r, b, b, b, b, b, b};
+unsigned short c22[16] = {r, r, r, r, b, b, b, b, r, r, b, b, b, b, b, b};
+unsigned short c23[16] = {b, r, r, r, r, r, r, r, r, r, r, r, r, r, r, r};
+unsigned short c24[16] = {b, b, r, r, r, r, r, r, r, r, r, r, r, r, r, r};
+unsigned short c25[16] = {b, b, b, r, r, r, r, r, r, r, r, r, r, r, r, r};
+
+unsigned short c26[16] = {b, b, b, b, b, b, b, b, b, b, b, b, b, b, b, b};
+
 
 
 void setup() {
