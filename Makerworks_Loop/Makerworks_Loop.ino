@@ -66,6 +66,20 @@ unsigned short c36[16] = {g, g, g, g, b, b, b, b, b, b, b, b, g, g, g, g};
 
 unsigned short c37[16] = {b, b, b, b, b, b, b, b, b, b, b, b, b, b, b, b};
 
+//E
+unsigned short c38[16] = {o, o, o, o, o, o, o, o, o, o, o, o, o, o, o, o};
+unsigned short c38[16] = {o, o, o, o, o, o, o, o, o, o, o, o, o, o, o, o};
+unsigned short c38[16] = {o, o, o, o, o, o, o, o, o, o, o, o, o, o, o, o};
+unsigned short c38[16] = {o, o, b, b, b, b, b, o, o, b, b, b, b, b, o, o};
+unsigned short c38[16] = {o, o, b, b, b, b, b, o, o, b, b, b, b, b, o, o};
+unsigned short c38[16] = {o, o, b, b, b, b, b, o, o, b, b, b, b, b, o, o};
+unsigned short c38[16] = {o, o, b, b, b, b, b, o, o, b, b, b, b, b, o, o};
+unsigned short c38[16] = {o, o, b, b, b, b, b, o, o, b, b, b, b, b, o, o};
+unsigned short c38[16] = {o, o, b, b, b, b, b, b, b, b, b, b, b, b, o, o};
+unsigned short c38[16] = {o, o, b, b, b, b, b, b, b, b, b, b, b, b, o, o};
+
+unsigned short c38[16] = {b, b, b, b, b, b, b, b, b, b, b, b, b, b, b, b};
+
 
 void setup() {
   matrix.begin();
