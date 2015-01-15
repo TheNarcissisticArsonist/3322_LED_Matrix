@@ -20,6 +20,7 @@ unsigned short p  = matrix.Color333(7, 0, 7); //Purple
 unsigned short y  = matrix.Color333(7, 7, 0); //Yellow
 unsigned short r  = matrix.Color333(7, 0, 0); //Red
 
+//M
 unsigned short c1[16] = {sB, sB, sB, sB, sB, sB, sB, sB, sB, sB, sB, sB, sB, sB, sB, sB};
 unsigned short c2[16] = {sB, sB, sB, sB, sB, sB, sB, sB, sB, sB, sB, sB, sB, sB, sB, sB};
 unsigned short c3[16] = {sB, sB, sB, sB, sB, sB, sB, sB, sB, sB, sB, sB, sB, sB, sB, sB};
@@ -37,6 +38,7 @@ unsigned short c14[16] = {sB, sB, sB, sB, sB, sB, sB, sB, sB, sB, sB, sB, sB, sB
 
 unsigned short c15[16] = {b, b, b, b, b, b, b, b, b, b, b, b, b, b, b, b};
 
+//A
 unsigned short c16[16] = {b, b, b, r, r, r, r, r, r, r, r, r, r, r, r, r};
 unsigned short c17[16] = {b, b, r, r, r, r, r, r, r, r, r, r, r, r, r, r};
 unsigned short c18[16] = {b, r, r, r, r, r, r, r, r, r, r, r, r, r, r, r};
@@ -50,6 +52,19 @@ unsigned short c25[16] = {b, b, b, r, r, r, r, r, r, r, r, r, r, r, r, r};
 
 unsigned short c26[16] = {b, b, b, b, b, b, b, b, b, b, b, b, b, b, b, b};
 
+//K
+unsigned short c27[16] = {g, g, g, g, g, g, g, g, g, g, g, g, g, g, g, g};
+unsigned short c28[16] = {g, g, g, g, g, g, g, g, g, g, g, g, g, g, g, g};
+unsigned short c29[16] = {g, g, g, g, g, g, g, g, g, g, g, g, g, g, g, g};
+unsigned short c30[16] = {b, b, b, b, b, b, g, g, g, g, b, b, b, b, b, b};
+unsigned short c31[16] = {b, b, b, b, g, g, g, g, g, g, g, g, b, b, b, b};
+unsigned short c32[16] = {b, b, b, b, g, g, g, g, g, g, g, g, b, b, b, b};
+unsigned short c33[16] = {b, b, g, g, g, g, b, b, b, b, g, g, g, g, b, b};
+unsigned short c34[16] = {b, b, g, g, g, g, b, b, b, b, g, g, g, g, b, b};
+unsigned short c35[16] = {g, g, g, g, b, b, b, b, b, b, b, b, g, g, g, g};
+unsigned short c36[16] = {g, g, g, g, b, b, b, b, b, b, b, b, g, g, g, g};
+
+unsigned short c37[16] = {b, b, b, b, b, b, b, b, b, b, b, b, b, b, b, b};
 
 
 void setup() {
