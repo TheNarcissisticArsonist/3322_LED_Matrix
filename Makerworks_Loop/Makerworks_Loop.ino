@@ -68,17 +68,17 @@ unsigned short c37[16] = {b, b, b, b, b, b, b, b, b, b, b, b, b, b, b, b};
 
 //E
 unsigned short c38[16] = {o, o, o, o, o, o, o, o, o, o, o, o, o, o, o, o};
-unsigned short c38[16] = {o, o, o, o, o, o, o, o, o, o, o, o, o, o, o, o};
-unsigned short c38[16] = {o, o, o, o, o, o, o, o, o, o, o, o, o, o, o, o};
-unsigned short c38[16] = {o, o, b, b, b, b, b, o, o, b, b, b, b, b, o, o};
-unsigned short c38[16] = {o, o, b, b, b, b, b, o, o, b, b, b, b, b, o, o};
-unsigned short c38[16] = {o, o, b, b, b, b, b, o, o, b, b, b, b, b, o, o};
-unsigned short c38[16] = {o, o, b, b, b, b, b, o, o, b, b, b, b, b, o, o};
-unsigned short c38[16] = {o, o, b, b, b, b, b, o, o, b, b, b, b, b, o, o};
-unsigned short c38[16] = {o, o, b, b, b, b, b, b, b, b, b, b, b, b, o, o};
-unsigned short c38[16] = {o, o, b, b, b, b, b, b, b, b, b, b, b, b, o, o};
+unsigned short c39[16] = {o, o, o, o, o, o, o, o, o, o, o, o, o, o, o, o};
+unsigned short c40[16] = {o, o, o, o, o, o, o, o, o, o, o, o, o, o, o, o};
+unsigned short c41[16] = {o, o, b, b, b, b, b, o, o, b, b, b, b, b, o, o};
+unsigned short c42[16] = {o, o, b, b, b, b, b, o, o, b, b, b, b, b, o, o};
+unsigned short c43[16] = {o, o, b, b, b, b, b, o, o, b, b, b, b, b, o, o};
+unsigned short c44[16] = {o, o, b, b, b, b, b, o, o, b, b, b, b, b, o, o};
+unsigned short c45[16] = {o, o, b, b, b, b, b, o, o, b, b, b, b, b, o, o};
+unsigned short c46[16] = {o, o, b, b, b, b, b, b, b, b, b, b, b, b, o, o};
+unsigned short c47[16] = {o, o, b, b, b, b, b, b, b, b, b, b, b, b, o, o};
 
-unsigned short c38[16] = {b, b, b, b, b, b, b, b, b, b, b, b, b, b, b, b};
+unsigned short c48[16] = {b, b, b, b, b, b, b, b, b, b, b, b, b, b, b, b};
 
 
 void setup() {
