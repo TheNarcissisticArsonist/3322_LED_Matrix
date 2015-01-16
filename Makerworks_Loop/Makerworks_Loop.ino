@@ -20,7 +20,8 @@ unsigned short p  = 63519; //7 Purple
 unsigned short y  = 65504; //8 Yellow
 unsigned short r  = 63488; //9 Red
 
-unsigned short M[16] = {65535, 65535, 65535, 65535, 16128, 16128, 4032, 4032, 16128, 16128, 65535, 65535, 65535, 65535, 0, 0};
+unsigned short letterM[16] = {65535, 65535, 65535, 65535, 16128, 16128, 4032, 4032, 16128, 16128, 65535, 65535, 65535, 65535, 0, 0};
+unsigned short letterA[16] = {8191, 16383, 32767, 61632, 61632, 61632, 61632, 32767, 16383, 8191, 0, 0, 0, 0, 0, 0};
 
 void drawLetter(unsigned short col[16], unsigned short color, int leftCol) {
   for(char column=0; column<16; column++) {
@@ -39,5 +40,6 @@ void setup() {
   Matrix.begin();
 }
 void loop() {
-  drawLetter(M, s, 0);
+  drawLetter(letterM, s, 0);
+  drawLetter(letterA, s, 0);
 }
