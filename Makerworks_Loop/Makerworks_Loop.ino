@@ -39,5 +39,5 @@ void setup() {
   Matrix.begin();
 }
 void loop() {
-  
+  drawLetter(M, s, 0);
 }
