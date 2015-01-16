@@ -26,6 +26,7 @@ unsigned short letterK[16] = {65535, 65535, 65535, 960, 4080, 4080, 15420, 15420
 unsigned short letterE[16] = {65535, 65535, 65535, 49539, 49539, 49539, 49539, 49539, 49155, 49155, 0, 0, 0, 0, 0, 0};
 unsigned short letterR[16] = {65535, 65535, 65535, 49920, 49920, 49920, 50048, 50112, 59391, 32511, 15487, 0, 0, 0, 0, 0};
 unsigned short letterW[16] = {65535, 65535, 65535, 65535, 252, 252, 1008, 1008, 252, 252, 65535, 65535, 65535, 65535, 0, 0};
+unsigned short letterO[16] = {8184, 32766, 65535, 57351, 49155, 49155, 49155, 49155, 57351, 65535, 32766, 8184, 0, 0, 0, 0};
 
 void drawLetter(unsigned short col[16], unsigned short color, int leftCol) {
   for(char column=0; column<16; column++) {
@@ -50,4 +51,5 @@ void loop() {
   drawLetter(letterE, y, 0);
   drawLetter(letterR, s, 0);
   drawLetter(letterW, r, 0);
+  drawLetter(letterO, g, 0);
 }
