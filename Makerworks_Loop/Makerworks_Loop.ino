@@ -42,6 +42,8 @@ unsigned short letter0[16] = {16380, 32766, 57375, 49275, 49635, 51075, 56835, 6
 unsigned short letter7[16] = {49152, 49152, 49167, 49215, 49407, 50112, 50944, 52736, 56320, 63488, 61440, 57344, 0, 0, 0, 0};
 unsigned short letter8[16] = {15996, 32766, 49539, 49539, 49539, 49539, 49539, 49539, 32766, 15996, 0, 0, 0, 0, 0, 0};
 
+int delayLength = 500;
+
 void drawLetter(unsigned short col[16], unsigned short color, int leftCol) {
   for(char column=0; column<16; column++) {
     for(char row=0; row<16; row++) {
@@ -57,7 +59,6 @@ void drawLetter(unsigned short col[16], unsigned short color, int leftCol) {
 
 void setup() {
   Matrix.begin();
-  int delayLength = 500;
 }
 void loop() {
   drawLetter(letterM, s, 0);
