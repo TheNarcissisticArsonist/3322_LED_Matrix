@@ -23,3 +23,8 @@ http://www.piskelapp.com/
 
 This alphabet was used to design some letters:
 http://www.atarimania.com/8bit/screens/alphabet_music_3.gif
+
+------------------------------------------------
+
+Convert Binary to Short.html takes in 16 bits and outputs an unsigned short composed of those bits (instead of assembling it in the arduino program).
+They're then assembled as columns of 16 pixels for Makerworks_Loop.ino
