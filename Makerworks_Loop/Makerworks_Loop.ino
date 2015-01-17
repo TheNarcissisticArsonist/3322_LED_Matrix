@@ -62,4 +62,6 @@ void loop() {
   drawLetter(space, b, 0);
   drawLetter(letterA, j, 0);
   drawLetter(letterN, j, 0);
+  drawLetter(letterD, j, 0);
+  drawLetter(space, b, 0);
 }
