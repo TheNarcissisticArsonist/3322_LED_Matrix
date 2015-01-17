@@ -40,6 +40,7 @@ unsigned short letter5[16] = {65024, 65282, 49923, 49923, 49923, 49923, 49923, 4
 unsigned short letter1[16] = {3, 4099, 12291, 28675, 65535, 65535, 3, 3, 3, 3, 0, 0, 0, 0, 0, 0};
 unsigned short letter0[16] = {16380, 32766, 57375, 49275, 49635, 51075, 56835, 63495, 32766, 16380, 0, 0, 0, 0, 0, 0};
 unsigned short letter7[16] = {49152, 49152, 49167, 49215, 49407, 50112, 50944, 52736, 56320, 63488, 61440, 57344, 0, 0, 0, 0};
+unsigned short letter8[16] = {15996, 32766, 49539, 49539, 49539, 49539, 49539, 49539, 32766, 15996, 0, 0, 0, 0, 0, 0};
 
 void drawLetter(unsigned short col[16], unsigned short color, int leftCol) {
   for(char column=0; column<16; column++) {
@@ -79,7 +80,6 @@ void loop() {
   drawLetter(space, b, 0);
   drawLetter(space, b, 0);
   drawLetter(space, b, 0);
-  drawLetter(space, b, 0);
   drawLetter(letter3, s, 0);
   drawLetter(letter3, s, 0);
   drawLetter(letter2, s, 0);
@@ -94,5 +94,13 @@ void loop() {
   drawLetter(letter0, p, 0);
   drawLetter(letter7, p, 0);
   drawLetter(letter6, p, 0);
+  drawLetter(space, b, 0);
+  drawLetter(letter8, y, 0);
+  drawLetter(letter3, y, 0);
+  drawLetter(letter0, y, 0);
+  drawLetter(space, b, 0);
+  drawLetter(space, b, 0);
+  drawLetter(space, b, 0);
+  drawLetter(space, b, 0);
   drawLetter(space, b, 0);
 }
