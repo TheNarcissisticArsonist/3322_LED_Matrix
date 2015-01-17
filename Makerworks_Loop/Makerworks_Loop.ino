@@ -42,111 +42,68 @@ unsigned short letter0[16] = {16380, 32766, 57375, 49275, 49635, 51075, 56835, 6
 unsigned short letter7[16] = {49152, 49152, 49167, 49215, 49407, 50112, 50944, 52736, 56320, 63488, 61440, 57344, 0, 0, 0, 0};
 unsigned short letter8[16] = {15996, 32766, 49539, 49539, 49539, 49539, 49539, 49539, 32766, 15996, 0, 0, 0, 0, 0, 0};
 
-int delayLength = 500;
-
 void drawLetter(unsigned short col[16], unsigned short color, int leftCol) {
   for(char column=0; column<16; column++) {
     for(char row=0; row<16; row++) {
-      if((col[column] >> (15 - row)) & 1) {
-        Matrix.drawPixel(row, leftCol + column, color);
+      if(leftCol > 32 || leftCol < -32) {
+        return;
+      }
+      if((col[column] >> (15-row)) & 1) {
+        Matrix.drawPixel(leftCol + column, row, color);
       }
       else {
-        Matrix.drawPixel(row, leftCol + column, 0);
+        Matrix.drawPixel(leftCol + column, row, 0);
       }
     }
   }
 }
 
+int flowDelay = 5;
+
 void setup() {
   Matrix.begin();
 }
 void loop() {
-  drawLetter(letterM, s, 0);
-  delay(delayLength);
-  drawLetter(letterA, r, 0);
-  delay(delayLength);
-  drawLetter(letterK, g, 0);
-  delay(delayLength);
-  drawLetter(letterE, y, 0);
-  delay(delayLength);
-  drawLetter(letterR, s, 0);
-  delay(delayLength);
-  drawLetter(letterW, r, 0);
-  delay(delayLength);
-  drawLetter(letterO, g, 0);
-  delay(delayLength);
-  drawLetter(letterR, y, 0);
-  delay(delayLength);
-  drawLetter(letterK, s, 0);
-  delay(delayLength);
-  drawLetter(letterS, r, 0);
-  delay(delayLength);
-  drawLetter(space, b, 0);
-  delay(delayLength);
-  drawLetter(letterA, j, 0);
-  delay(delayLength);
-  drawLetter(letterN, j, 0);
-  delay(delayLength);
-  drawLetter(letterD, j, 0);
-  delay(delayLength);
-  drawLetter(space, b, 0);
-  delay(delayLength);
-  drawLetter(letterF, r, 0);
-  delay(delayLength);
-  drawLetter(letterR, w, 0);
-  delay(delayLength);
-  drawLetter(letterC, j, 0);
-  delay(delayLength);
-  drawLetter(space, b, 0);
-  delay(delayLength);
-  drawLetter(space, b, 0);
-  delay(delayLength);
-  drawLetter(space, b, 0);
-  delay(delayLength);
-  drawLetter(letter3, s, 0);
-  delay(delayLength);
-  drawLetter(letter3, s, 0);
-  delay(delayLength);
-  drawLetter(letter2, s, 0);
-  delay(delayLength);
-  drawLetter(letter2, s, 0);
-  delay(delayLength);
-  drawLetter(space, b, 0);
-  delay(delayLength);
-  drawLetter(letter3, r, 0);
-  delay(delayLength);
-  drawLetter(letter6, r, 0);
-  delay(delayLength);
-  drawLetter(letter5, r, 0);
-  delay(delayLength);
-  drawLetter(letter6, r, 0);
-  delay(delayLength);
-  drawLetter(space, b, 0);
-  delay(delayLength);
-  drawLetter(letter1, p, 0);
-  delay(delayLength);
-  drawLetter(letter0, p, 0);
-  delay(delayLength);
-  drawLetter(letter7, p, 0);
-  delay(delayLength);
-  drawLetter(letter6, p, 0);
-  delay(delayLength);
-  drawLetter(space, b, 0);
-  delay(delayLength);
-  drawLetter(letter8, y, 0);
-  delay(delayLength);
-  drawLetter(letter3, y, 0);
-  delay(delayLength);
-  drawLetter(letter0, y, 0);
-  delay(delayLength);
-  drawLetter(space, b, 0);
-  delay(delayLength);
-  drawLetter(space, b, 0);
-  delay(delayLength);
-  drawLetter(space, b, 0);
-  delay(delayLength);
-  drawLetter(space, b, 0);
-  delay(delayLength);
-  drawLetter(space, b, 0);
-  delay(delayLength);
+  for(int i=50; i>=-750; i--) {
+    drawLetter(letterM, s, i);
+    drawLetter(letterA, r, i+16);
+    drawLetter(letterK, g, i+32);
+    drawLetter(letterE, y, i+48);
+    drawLetter(letterR, s, i+64);
+    drawLetter(letterW, r, i+80);
+    drawLetter(letterO, g, i+96);
+    drawLetter(letterR, y, i+112);
+    drawLetter(letterK, s, i+128);
+    drawLetter(letterS, r, i+144);
+    drawLetter(space, b, i+160);
+    drawLetter(letterA, j, i+176);
+    drawLetter(letterN, j, i+192);
+    drawLetter(letterD, j, i+208);
+    drawLetter(space, b, i+224);
+    drawLetter(letterF, r, i+240);
+    drawLetter(letterR, w, i+256);
+    drawLetter(letterC, j, i+272);
+    drawLetter(space, b, i+288);
+    drawLetter(space, b, i+304);
+    drawLetter(letter3, s, i+320);
+    drawLetter(letter3, s, i+336);
+    drawLetter(letter2, s, i+352);
+    drawLetter(letter2, s, i+368);
+    drawLetter(space, b, i+384);
+    drawLetter(letter3, r, i+400);
+    drawLetter(letter6, r, i+416);
+    drawLetter(letter5, r, i+432);
+    drawLetter(letter6, r, i+448);
+    drawLetter(space, b, i+464);
+    drawLetter(letter1, p, i+480);
+    drawLetter(letter0, p, i+496);
+    drawLetter(letter7, p, i+512);
+    drawLetter(letter6, p, i+528);
+    drawLetter(space, b, i+544);
+    drawLetter(letter8, y, i+560);
+    drawLetter(letter3, y, i+576);
+    drawLetter(letter0, y, i+592);
+    drawLetter(space, b, i+608);
+    delay(flowDelay);
+  }
 }
