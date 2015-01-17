@@ -18,7 +18,7 @@ unsigned short o  = 64928; //5 Orange
 unsigned short w  = 65535; //6 White
 unsigned short p  = 63519; //7 Purple
 unsigned short y  = 65504; //8 Yellow
-unsigned short r  = 63488; //9 Red
+unsigned short r  = 63488; //9 Red  
 
 unsigned short letterM[16] = {65535, 65535, 65535, 65535, 16128, 16128, 4032, 4032, 16128, 16128, 65535, 65535, 65535, 65535, 0, 0};
 unsigned short letterA[12] = {8191, 16383, 32767, 61632, 61632, 61632, 61632, 32767, 16383, 8191, 0, 0};
