@@ -66,6 +66,10 @@ void setup() {
 void loop() {
   int off = 0;
   for(int i=50; i>=-750; i--) {
+    drawLetter(space, 16, b, i+off); off+=16;
+    drawLetter(space, 16, b, i+off); off+=16;
+    drawLetter(space, 16, b, i+off); off+=16;
+    drawLetter(space, 16, b, i+off); off+=16;
     drawLetter(letterM, 16, s, i+off); off+=16;
     drawLetter(letterA, 12, r, i+off); off+=12;
     drawLetter(letterK, 12, g, i+off); off+=12;
