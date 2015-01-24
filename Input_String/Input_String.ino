@@ -1,7 +1,6 @@
 #include <Adafruit_GFX.h>
 #include <RGBmatrixPanel.h>
 
-
 #define CLK 8
 #define LAT A3
 #define OE 9
@@ -11,15 +10,15 @@
 RGBmatrixPanel Matrix(A, B, C, CLK, LAT, OE, false);
 
 unsigned short letterA[12] = {8191, 16383, 32767, 61632, 61632, 61632, 61632, 32767, 16383, 8191, 0, 0};
-unsigned short letterB
+unsigned short letterB[10] = {65535, 65535, 49539, 49539, 49539, 58311, 32766, 15996, 0, 0};
 unsigned short letterC[12] = {32766, 65535, 57351, 49155, 49155, 49155, 49155, 57351, 61455, 28686, 0, 0};
 unsigned short letterD[12] = {65535, 65535, 65535, 49155, 49155, 49155, 57347, 32766, 16380, 4080, 0, 0};
 unsigned short letterE[12] = {65535, 65535, 65535, 49539, 49539, 49539, 49539, 49539, 49155, 49155, 0, 0};
 unsigned short letterF[13] = {65535, 65535, 65535, 49920, 49920, 49920, 49920, 49920, 49920, 49152, 49152, 0, 0};
-unsigned short letterG
-unsigned short letterH
-unsigned short letterI
-unsigned short letterJ
+unsigned short letterG[12] = {16380, 32766, 57351, 49155, 49155, 49347, 49347, 57543, 28927, 12542, 0, 0};
+unsigned short letterH[12] = {65535, 65535, 65535, 896, 896, 896, 896, 65535, 65535, 65535, 0, 0};
+unsigned short letterI[10] = {49155, 49155, 49155, 65535, 65535, 49155, 49155, 49155, 0, 0};
+unsigned short letterJ[11] = {30, 49183, 49155, 49155, 49155, 65535, 65534, 49152, 49152, 0, 0};
 unsigned short letterK[12] = {65535, 65535, 65535, 960, 4080, 4080, 15420, 15420, 61455, 61455, 0, 0};
 unsigned short letterL
 unsigned short letterM[16] = {65535, 65535, 65535, 65535, 16128, 16128, 4032, 4032, 16128, 16128, 65535, 65535, 65535, 65535, 0, 0};
@@ -55,7 +54,7 @@ unsigned short star
 unsigned short slash
 unsigned short minus
 unsigned short plus
-unsigned short equals
+unsigned short equals*/
 
 void setup() {
   Matrix.begin();
