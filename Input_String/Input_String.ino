@@ -29,8 +29,8 @@ unsigned short letterQ[12] = {16380, 32766, 61455, 57351, 49155, 49179, 57375, 6
 unsigned short letterR[13] = {65535, 65535, 65535, 49920, 49920, 49920, 50048, 50112, 59391, 32511, 15487, 0, 0};
 unsigned short letterS[14] = {15872, 32519, 62343, 57735, 57735, 57735, 57735, 57735, 57735, 57807, 57598, 124, 0, 0};
 unsigned short letterT[16] = {49152, 49152, 49152, 49152, 49152, 65535, 65535, 49152, 49152, 49152, 49152, 49152, 0, 0};
-unsigned short letterU
-unsigned short letterV
+unsigned short letterU[13] = {65528, 65534, 31, 7, 3, 3, 3, 7, 31, 65534, 65528, 0, 0};
+unsigned short letterV[13] = {63488, 65024, 4032, 504, 62, 7, 62, 504, 4032, 65024, 63488, 0, 0};
 unsigned short letterW[16] = {65535, 65535, 65535, 65535, 252, 252, 1008, 1008, 252, 252, 65535, 65535, 65535, 65535, 0, 0};
 unsigned short letterX
 unsigned short letterY
