@@ -56,6 +56,22 @@ unsigned short minus[8] = {384, 384, 384, 384, 384, 384, 0, 0};
 unsigned short plus[8] = {384, 384, 2016, 2016, 384, 384, 0, 0};
 unsigned short equals[8] = {1632, 1632, 1632, 1632, 1632, 1632, 0, 0};
 
+void drawLetter(unsigned short *col, char arrayLength, unsigned short color, int leftCol) {
+  for(char column=0; column<arrayLength; column++) {
+    for(char row=0; row<16; row++) {
+      if(leftCol > 32 || leftCol < -32) {
+        return;
+      }
+      if((col[column] >> (15-row)) & 1) {
+        Matrix.drawPixel(leftCol + column, row, color);
+      }
+      else {
+        Matrix.drawPixel(leftCol + column, row, 0);
+      }
+    }
+  }
+}
+
 void setup() {
   Matrix.begin();
 }
