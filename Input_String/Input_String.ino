@@ -143,6 +143,78 @@ void drawString(char *str, unsigned short *color, int len, int leftCol) {
         drawLetter(letterS, 14, color[i], offset);
         offset+=14;
         break;
+      case 'T':
+        drawLetter(letterT, 16, color[i], offset);
+        offset+=16;
+        break;
+      case 'U':
+        drawLetter(letterU, 13, color[i], offset);
+        offset+=13;
+        break;
+      case 'V':
+        drawLetter(letterV, 13, color[i], offset);
+        offset+=13;
+        break;
+      case 'W':
+        drawLetter(letterW, 16, color[i], offset);
+        offset+=16;
+        break;
+      case 'X':
+        drawLetter(letterX, 10, color[i], offset);
+        offset+=10;
+        break;
+      case 'Y':
+        drawLetter(letterY, 12, color[i], offset);
+        offset+=12;
+        break;
+      case 'Z':
+        drawLetter(letterZ, 12, color[i], offset);
+        offset+=12;
+        break;
+      case ' ':
+        drawLetter(space, 16, color[i], offset);
+        offset+=16;
+        break;
+      case '0':
+        drawLetter(letter0, 12, color[i], offset);
+        offset+=12;
+        break;
+      case '1':
+        drawLetter(letter1, 12, color[i], offset);
+        offset+=12;
+        break;
+      case '2':
+        drawLetter(letter2, 13, color[i], offset);
+        offset+=13;
+        break;
+      case '3':
+        drawLetter(letter3, 14, color[i], offset);
+        offset+=14;
+        break;
+      case '4':
+        drawLetter(letter4, 12, color[i], offset);
+        offset+=12;
+        break;
+      case '5':
+        drawLetter(letter5, 14, color[i], offset);
+        offset+=14;
+        break;
+      case '6':
+        drawLetter(letter6, 14, color[i], offset);
+        offset+=14;
+        break;
+      case '7':
+        drawLetter(letter7, 14, color[i], offset);
+        offset+=14;
+        break;
+      case '8':
+        drawLetter(letter8, 12, color[i], offset);
+        offset+=12;
+        break;
+      case '9':
+        drawLetter(letter9, 10, color[i], offset);
+        offset+=10;
+        break;
     }
   }
 }
