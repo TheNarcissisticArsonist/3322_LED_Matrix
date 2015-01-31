@@ -62,7 +62,9 @@ unsigned short slash[7] = {15, 255, 4080, 65280, 61440, 0, 0};
 unsigned short minus[8] = {384, 384, 384, 384, 384, 384, 0, 0};
 unsigned short plus[8] = {384, 384, 2016, 2016, 384, 384, 0, 0};
 unsigned short equals[8] = {1632, 1632, 1632, 1632, 1632, 1632, 0, 0};
+// \/ Use p
 unsigned short pi[14] = {49152, 49152, 65535, 65535, 49152, 49152, 49152, 49152, 65535, 65535, 49152, 49152, 0, 0};
+// \/ Use i
 unsigned short integrand[8] = {6, 3, 32767, 65534, 49152, 24576, 0, 0};
 unsigned short lPara[5] = {16380, 65535, 49155, 0, 0};
 unsigned short rPara[5] = {49155, 65535, 16380, 0, 0};
