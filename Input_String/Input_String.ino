@@ -34,7 +34,7 @@ unsigned short letterV[13] = {63488, 65024, 4032, 504, 63, 7, 63, 504, 4032, 650
 unsigned short letterW[16] = {65535, 65535, 65535, 65535, 252, 252, 1008, 1008, 252, 252, 65535, 65535, 65535, 65535, 0, 0};
 unsigned short letterX[10] = {57351, 63519, 7800, 2016, 2016, 7800, 63519, 57351, 0, 0};
 unsigned short letterY[12] = {57344, 63488, 7680, 1920, 511, 511, 1920, 7680, 63488, 57344, 0, 0};
-unsigned short letterZ[12] = {49183, 49215, 49267, 49379, 49603, 50051, 50947, 52739, 64515, 63491, 0 0};
+unsigned short letterZ[12] = {49183, 49215, 49267, 49379, 49603, 50051, 50947, 52739, 64515, 63491, 0, 0};
 unsigned short space[16] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
 unsigned short letter0[12] = {16380, 32766, 57375, 49275, 49635, 51075, 56835, 63495, 32766, 16380, 0, 0};
 unsigned short letter1[12] = {3, 4099, 12291, 28675, 65535, 65535, 3, 3, 3, 3, 0, 0};
@@ -45,7 +45,7 @@ unsigned short letter5[14] = {65024, 65282, 49923, 49923, 49923, 49923, 49923, 4
 unsigned short letter6[14] = {16380, 32766, 57799, 49539, 49539, 49539, 49539, 49539, 49539, 57799, 28926, 12412, 0, 0};
 unsigned short letter7[14] = {49152, 49152, 49167, 49215, 49407, 50112, 50944, 52736, 56320, 63488, 61440, 57344, 0, 0};
 unsigned short letter8[12] = {15996, 32766, 49539, 49539, 49539, 49539, 49539, 49539, 32766, 15996, 0, 0};
-unsigned short letter9
+unsigned short letter9[10] = {32256, 65280, 59136, 49920, 49920, 59136, 65535, 65535, 0, 0};
 unsigned short exclamation
 unsigned short question
 unsigned short period
@@ -54,7 +54,7 @@ unsigned short star
 unsigned short slash
 unsigned short minus
 unsigned short plus
-unsigned short equals
+unsigned short equals*/
 
 void setup() {
   Matrix.begin();
