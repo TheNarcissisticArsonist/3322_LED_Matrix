@@ -12,9 +12,20 @@ RGBmatrixPanel Matrix(A, B, C, CLK, LAT, OE, false);
 //ONLY CAPITAL LETTERS!!! MAKE SURE THE CHARACTER HAS A MATCH BELOW!!!
 char inputString[12] = "TEST STRING";
 unsigned short colorArray[11] = {
-
+Matrix.Color333(7, 0, 0),
+Matrix.Color333(0, 7, 0),
+Matrix.Color333(0, 0, 7),
+Matrix.Color333(7, 7, 0),
+Matrix.Color333(7, 0, 7),
+Matrix.Color333(0, 7, 7),
+Matrix.Color333(7, 7, 7),
+Matrix.Color333(0, 2, 7),
+Matrix.Color333(0, 0, 1),
+Matrix.Color333(7, 4, 1),
+Matrix.Color333(3, 7, 3)
 };
 int length = 11;
+int colLength;
 
 unsigned short letterA[12] = {8191, 16383, 32767, 61632, 61632, 61632, 61632, 32767, 16383, 8191, 0, 0};
 unsigned short letterB[10] = {65535, 65535, 49539, 49539, 49539, 58311, 32766, 15996, 0, 0};
@@ -300,6 +311,7 @@ void drawString(char *str, unsigned short *color, int len, int leftCol) {
         delay(10);
     }
   }
+  colLength = offset;
 }
 
 void drawLetter(unsigned short *col, char arrayLength, unsigned short color, int leftCol) {
@@ -322,5 +334,12 @@ void setup() {
   Matrix.begin();
 }
 void loop() {
-  drawString(inputString,  colorArray, length, 0);
+  for(int i=40; i>-colLength-10; i--) {
+    drawLetter(space, 16, 0, i);
+    drawLetter(space, 16, 0, i+16);
+    drawLetter(space, 16, 0, i+32);
+    drawLetter(space, 16, 0, i+48);
+    drawString(inputString, colorArray, 11, i+64);
+    delay(10);
+  }
 }
