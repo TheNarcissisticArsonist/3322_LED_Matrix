@@ -9,6 +9,7 @@
 #define C A2
 RGBmatrixPanel Matrix(A, B, C, CLK, LAT, OE, false);
 
+//ONLY CAPITAL LETTERS!!! MAKE SURE THE CHARACTER HAS A MATCH BELOW!!!
 char inputString[12] = "TEST STRING";
 unsigned short colorArray[11] = {
 
@@ -62,7 +63,7 @@ unsigned short minus[8] = {384, 384, 384, 384, 384, 384, 0, 0};
 unsigned short plus[8] = {384, 384, 2016, 2016, 384, 384, 0, 0};
 unsigned short equals[8] = {1632, 1632, 1632, 1632, 1632, 1632, 0, 0};
 
-void drawString(char *str, char *color, int len, int leftCol) {
+void drawString(char *str, unsigned short *color, int len, int leftCol) {
   int offset = 0;
   for(int i=0; i<len; i++) {
     switch(str[i]) {
@@ -110,6 +111,38 @@ void drawString(char *str, char *color, int len, int leftCol) {
         drawLetter(letterK, 12, color[i], offset);
         offset+=12;
         break;
+      case 'L':
+        drawLetter(letterL, 10, color[i], offset);
+        offset+=10;
+        break;
+      case 'M':
+        drawLetter(letterM, 16, color[i], offset);
+        offset+=16;
+        break;
+      case 'N':
+        drawLetter(letterN, 14, color[i], offset);
+        offset+=14;
+        break;
+      case 'O':
+        drawLetter(letterO, 14, color[i], offset);
+        offset+=14;
+        break;
+      case 'P':
+        drawLetter(letterP, 11, color[i], offset);
+        offset+=11;
+        break;
+      case 'Q':
+        drawLetter(letterQ, 12, color[i], offset);
+        offset+=12;
+        break;
+      case 'R':
+        drawLetter(letterR, 13, color[i], offset);
+        offset+=13;
+        break;
+      case 'S':
+        drawLetter(letterS, 14, color[i], offset);
+        offset+=14;
+        break;
     }
   }
 }
@@ -134,5 +167,5 @@ void setup() {
   Matrix.begin();
 }
 void loop() {
-  
+  drawString(inputString,  colorArray, length, 0);
 }
