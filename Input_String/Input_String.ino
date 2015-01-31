@@ -46,8 +46,8 @@ unsigned short letter6[14] = {16380, 32766, 57799, 49539, 49539, 49539, 49539, 4
 unsigned short letter7[14] = {49152, 49152, 49167, 49215, 49407, 50112, 50944, 52736, 56320, 63488, 61440, 57344, 0, 0};
 unsigned short letter8[12] = {15996, 32766, 49539, 49539, 49539, 49539, 49539, 49539, 32766, 15996, 0, 0};
 unsigned short letter9[10] = {32256, 65280, 59136, 49920, 49920, 59136, 65535, 65535, 0, 0};
-unsigned short exclamation
-unsigned short question
+unsigned short exclamation[4] = {65523, 65523, 0, 0};
+unsigned short question[10] = {50163, 50163, 49920, 49920, 49920, 59163, 32256, 15360, 0, 0};
 unsigned short period
 unsigned short comma
 unsigned short star
