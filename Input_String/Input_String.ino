@@ -9,6 +9,12 @@
 #define C A2
 RGBmatrixPanel Matrix(A, B, C, CLK, LAT, OE, false);
 
+char inputString[12] = "TEST STRING";
+unsigned short colorArray[11] = {
+
+};
+int length = 11;
+
 unsigned short letterA[12] = {8191, 16383, 32767, 61632, 61632, 61632, 61632, 32767, 16383, 8191, 0, 0};
 unsigned short letterB[10] = {65535, 65535, 49539, 49539, 49539, 58311, 32766, 15996, 0, 0};
 unsigned short letterC[12] = {32766, 65535, 57351, 49155, 49155, 49155, 49155, 57351, 61455, 28686, 0, 0};
@@ -55,6 +61,38 @@ unsigned short slash[7] = {15, 255, 4080, 65280, 61440, 0, 0};
 unsigned short minus[8] = {384, 384, 384, 384, 384, 384, 0, 0};
 unsigned short plus[8] = {384, 384, 2016, 2016, 384, 384, 0, 0};
 unsigned short equals[8] = {1632, 1632, 1632, 1632, 1632, 1632, 0, 0};
+
+void drawString(char *str, char *color, int len, int leftCol) {
+  int offset = 0;
+  for(int i=0; i<len; i++) {
+    switch(str[i]) {
+      case "A" || "a":
+        drawLetter(letterA, 12, color[i], offset);
+        offset+=12;
+        break;
+      case "B" || "b":
+        drawLetter(letterB, 10, color[i], offset);
+        offset+=10;
+        break;
+      case "C" || "c":
+        drawLetter(letterC, 12, color[i], offset);
+        offset+=12;
+        break;
+      case "D" || "d":
+        drawLetter(letterD, 12, color[i], offset);
+        offset+=12;
+        break;
+      case "E" || "e":
+        drawLetter(letterE, 12, color[i], offset);
+        offset+=12;
+        break;
+      case "F" || "f":
+        drawLetter(letterF, 13, color[i], offset);
+        offset+=13;
+        break;
+    }
+  }
+}
 
 void drawLetter(unsigned short *col, char arrayLength, unsigned short color, int leftCol) {
   for(char column=0; column<arrayLength; column++) {
