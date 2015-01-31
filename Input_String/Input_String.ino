@@ -40,7 +40,7 @@ unsigned short letter0[12] = {16380, 32766, 57375, 49275, 49635, 51075, 56835, 6
 unsigned short letter1[12] = {3, 4099, 12291, 28675, 65535, 65535, 3, 3, 3, 3, 0, 0};
 unsigned short letter2[13] = {28687, 28703, 57407, 57471, 49395, 49635, 50115, 59267, 65283, 65027, 31747, 0, 0};
 unsigned short letter3[14] = {12300, 28686, 57735, 49539, 49539, 49539, 49539, 49539, 49539, 58311, 32766, 15996, 0, 0};
-unsigned short letter4
+unsigned short letter4[12] = {65280, 65280, 768, 768, 768, 768, 65535, 65535, 768, 768, 0, 0};
 unsigned short letter5[14] = {65024, 65282, 49923, 49923, 49923, 49923, 49923, 49923, 49923, 50055, 49662, 49404, 0, 0};
 unsigned short letter6[14] = {16380, 32766, 57799, 49539, 49539, 49539, 49539, 49539, 49539, 57799, 28926, 12412, 0, 0};
 unsigned short letter7[14] = {49152, 49152, 49167, 49215, 49407, 50112, 50944, 52736, 56320, 63488, 61440, 57344, 0, 0};
@@ -54,7 +54,7 @@ unsigned short star
 unsigned short slash
 unsigned short minus
 unsigned short plus
-unsigned short equals*/
+unsigned short equals
 
 void setup() {
   Matrix.begin();
