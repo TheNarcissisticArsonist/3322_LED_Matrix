@@ -51,10 +51,10 @@ unsigned short question[10] = {50163, 50163, 49920, 49920, 49920, 59163, 32256, 
 unsigned short period[4] = {3, 3, 0, 0};
 unsigned short comma[4] = {7, 6, 0, 0};
 unsigned short star[7] = {18432, 12288, 64512, 12288, 18432, 0, 0};
-unsigned short slash
-unsigned short minus
-unsigned short plus
-unsigned short equals*/
+unsigned short slash[7] = {15, 255, 4080, 65280, 61440, 0, 0};
+unsigned short minus[8] = {384, 384, 384, 384, 384, 384, 0, 0};
+unsigned short plus[8] = {384, 384, 2016, 2016, 384, 384, 0, 0};
+unsigned short equals[8] = {1632, 1632, 1632, 1632, 1632, 1632, 0, 0};
 
 void setup() {
   Matrix.begin();
