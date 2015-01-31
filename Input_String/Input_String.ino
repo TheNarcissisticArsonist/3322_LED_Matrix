@@ -215,6 +215,67 @@ void drawString(char *str, unsigned short *color, int len, int leftCol) {
         drawLetter(letter9, 10, color[i], offset);
         offset+=10;
         break;
+      case '!':
+        drawLetter(exclamation, 4, color[i], offset);
+        offset+=4;
+        break;
+      case '?':
+        drawLetter(question, 10, color[i], offset);
+        offset+=10;
+        break;
+      case '.':
+        drawLetter(period, 4, color[i], offset);
+        offset+=4;
+        break;
+      case ',':
+        drawLetter(comma, 4, color[i], offset);
+        offset+=4;
+        break;
+      case '*':
+        drawLetter(star, 7, color[i], offset);
+        offset+=7;
+        break;
+      case '/':
+        drawLetter(slash, 7, color[i], offset);
+        offset+=7;
+        break;
+      case '-':
+        drawLetter(minus, 8, color[i], offset);
+        offset+=8;
+        break;
+      case '+':
+        drawLetter(plus, 8, color[i], offset);
+        offset+=8;
+        break;
+      case '=':
+        drawLetter(equals, 8, color[i], offset);
+        offset+=8;
+        break;
+      default:
+        Matrix.fillScreen(Matrix.Color333(7, 0, 0));
+        delay(10);
+        Matrix.fillScreen(Matrix.Color333(0, 0, 0));
+        delay(10);
+        Matrix.fillScreen(Matrix.Color333(7, 0, 0));
+        delay(10);
+        Matrix.fillScreen(Matrix.Color333(0, 0, 0));
+        delay(10);
+        Matrix.fillScreen(Matrix.Color333(7, 0, 0));
+        delay(10);
+        Matrix.fillScreen(Matrix.Color333(0, 0, 0));
+        delay(10);
+        Matrix.fillScreen(Matrix.Color333(7, 0, 0));
+        delay(10);
+        Matrix.fillScreen(Matrix.Color333(0, 0, 0));
+        delay(10);
+        Matrix.fillScreen(Matrix.Color333(7, 0, 0));
+        delay(10);
+        Matrix.fillScreen(Matrix.Color333(0, 0, 0));
+        delay(10);
+        Matrix.fillScreen(Matrix.Color333(7, 0, 0));
+        delay(10);
+        Matrix.fillScreen(Matrix.Color333(0, 0, 0));
+        delay(10);
     }
   }
 }
