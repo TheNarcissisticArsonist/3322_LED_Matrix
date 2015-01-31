@@ -66,29 +66,49 @@ void drawString(char *str, char *color, int len, int leftCol) {
   int offset = 0;
   for(int i=0; i<len; i++) {
     switch(str[i]) {
-      case "A" || "a":
+      case 'A':
         drawLetter(letterA, 12, color[i], offset);
         offset+=12;
         break;
-      case "B" || "b":
+      case 'B':
         drawLetter(letterB, 10, color[i], offset);
         offset+=10;
         break;
-      case "C" || "c":
+      case 'C':
         drawLetter(letterC, 12, color[i], offset);
         offset+=12;
         break;
-      case "D" || "d":
+      case 'D':
         drawLetter(letterD, 12, color[i], offset);
         offset+=12;
         break;
-      case "E" || "e":
+      case 'E':
         drawLetter(letterE, 12, color[i], offset);
         offset+=12;
         break;
-      case "F" || "f":
+      case 'F':
         drawLetter(letterF, 13, color[i], offset);
         offset+=13;
+        break;
+      case 'G':
+        drawLetter(letterG, 12, color[i], offset);
+        offset+=12;
+        break;
+      case 'H':
+        drawLetter(letterH, 12, color[i], offset);
+        offset+=12;
+        break;
+      case 'I':
+        drawLetter(letterI, 10, color[i], offset);
+        offset+=10;
+        break;
+      case 'J':
+        drawLetter(letterJ, 11, color[i], offset);
+        offset+=11;
+        break;
+      case 'K':
+        drawLetter(letterK, 12, color[i], offset);
+        offset+=12;
         break;
     }
   }
