@@ -332,7 +332,5 @@ void setup() {
   Matrix.begin();
 }
 void loop() {
-  for(int n=0; n<length; n++) {
-    drawString(inputString, colorArray, 2, 0);
-  }
+  
 }
