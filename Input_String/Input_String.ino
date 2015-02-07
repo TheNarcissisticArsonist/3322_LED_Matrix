@@ -10,22 +10,15 @@
 RGBmatrixPanel Matrix(A, B, C, CLK, LAT, OE, false);
 
 //ONLY CAPITAL LETTERS!!! MAKE SURE THE CHARACTER HAS A MATCH BELOW!!!
-char inputString[12] = "TEST STRING";
-unsigned short colorArray[11] = {
+char inputString[3] = "Hi";
+unsigned short colorArray[2] = {
 Matrix.Color333(7, 0, 0),
-Matrix.Color333(0, 7, 0),
-Matrix.Color333(0, 0, 7),
-Matrix.Color333(7, 7, 0),
-Matrix.Color333(7, 0, 7),
-Matrix.Color333(0, 7, 7),
-Matrix.Color333(7, 7, 7),
-Matrix.Color333(0, 2, 7),
-Matrix.Color333(0, 0, 1),
-Matrix.Color333(7, 4, 1),
-Matrix.Color333(3, 7, 3)
+Matrix.Color333(0, 7, 0)
 };
-int length = 11;
+int length = 2;
 int colLength;
+int i = 0;
+int offset = 0;
 
 unsigned short letterA[12] = {8191, 16383, 32767, 61632, 61632, 61632, 61632, 32767, 16383, 8191, 0, 0};
 unsigned short letterB[10] = {65535, 65535, 49539, 49539, 49539, 58311, 32766, 15996, 0, 0};
@@ -81,237 +74,242 @@ unsigned short lPara[5] = {16380, 65535, 49155, 0, 0};
 unsigned short rPara[5] = {49155, 65535, 16380, 0, 0};
 
 void drawString(char *str, unsigned short *color, int len, int leftCol) {
-  int offset = 0;
-  for(int i=0; i<len; i++) {
-    switch(str[i]) {
-      case 'A':
-        drawLetter(letterA, 12, color[i], offset);
-        offset+=12;
-        break;
-      case 'B':
-        drawLetter(letterB, 10, color[i], offset);
-        offset+=10;
-        break;
-      case 'C':
-        drawLetter(letterC, 12, color[i], offset);
-        offset+=12;
-        break;
-      case 'D':
-        drawLetter(letterD, 12, color[i], offset);
-        offset+=12;
-        break;
-      case 'E':
-        drawLetter(letterE, 12, color[i], offset);
-        offset+=12;
-        break;
-      case 'F':
-        drawLetter(letterF, 13, color[i], offset);
-        offset+=13;
-        break;
-      case 'G':
-        drawLetter(letterG, 12, color[i], offset);
-        offset+=12;
-        break;
-      case 'H':
-        drawLetter(letterH, 12, color[i], offset);
-        offset+=12;
-        break;
-      case 'I':
-        drawLetter(letterI, 10, color[i], offset);
-        offset+=10;
-        break;
-      case 'J':
-        drawLetter(letterJ, 11, color[i], offset);
-        offset+=11;
-        break;
-      case 'K':
-        drawLetter(letterK, 12, color[i], offset);
-        offset+=12;
-        break;
-      case 'L':
-        drawLetter(letterL, 10, color[i], offset);
-        offset+=10;
-        break;
-      case 'M':
-        drawLetter(letterM, 16, color[i], offset);
-        offset+=16;
-        break;
-      case 'N':
-        drawLetter(letterN, 14, color[i], offset);
-        offset+=14;
-        break;
-      case 'O':
-        drawLetter(letterO, 14, color[i], offset);
-        offset+=14;
-        break;
-      case 'P':
-        drawLetter(letterP, 11, color[i], offset);
-        offset+=11;
-        break;
-      case 'Q':
-        drawLetter(letterQ, 12, color[i], offset);
-        offset+=12;
-        break;
-      case 'R':
-        drawLetter(letterR, 13, color[i], offset);
-        offset+=13;
-        break;
-      case 'S':
-        drawLetter(letterS, 14, color[i], offset);
-        offset+=14;
-        break;
-      case 'T':
-        drawLetter(letterT, 16, color[i], offset);
-        offset+=16;
-        break;
-      case 'U':
-        drawLetter(letterU, 13, color[i], offset);
-        offset+=13;
-        break;
-      case 'V':
-        drawLetter(letterV, 13, color[i], offset);
-        offset+=13;
-        break;
-      case 'W':
-        drawLetter(letterW, 16, color[i], offset);
-        offset+=16;
-        break;
-      case 'X':
-        drawLetter(letterX, 10, color[i], offset);
-        offset+=10;
-        break;
-      case 'Y':
-        drawLetter(letterY, 12, color[i], offset);
-        offset+=12;
-        break;
-      case 'Z':
-        drawLetter(letterZ, 12, color[i], offset);
-        offset+=12;
-        break;
-      case ' ':
-        drawLetter(space, 16, color[i], offset);
-        offset+=16;
-        break;
-      case '0':
-        drawLetter(letter0, 12, color[i], offset);
-        offset+=12;
-        break;
-      case '1':
-        drawLetter(letter1, 12, color[i], offset);
-        offset+=12;
-        break;
-      case '2':
-        drawLetter(letter2, 13, color[i], offset);
-        offset+=13;
-        break;
-      case '3':
-        drawLetter(letter3, 14, color[i], offset);
-        offset+=14;
-        break;
-      case '4':
-        drawLetter(letter4, 12, color[i], offset);
-        offset+=12;
-        break;
-      case '5':
-        drawLetter(letter5, 14, color[i], offset);
-        offset+=14;
-        break;
-      case '6':
-        drawLetter(letter6, 14, color[i], offset);
-        offset+=14;
-        break;
-      case '7':
-        drawLetter(letter7, 14, color[i], offset);
-        offset+=14;
-        break;
-      case '8':
-        drawLetter(letter8, 12, color[i], offset);
-        offset+=12;
-        break;
-      case '9':
-        drawLetter(letter9, 10, color[i], offset);
-        offset+=10;
-        break;
-      case '!':
-        drawLetter(exclamation, 4, color[i], offset);
-        offset+=4;
-        break;
-      case '?':
-        drawLetter(question, 10, color[i], offset);
-        offset+=10;
-        break;
-      case '.':
-        drawLetter(period, 4, color[i], offset);
-        offset+=4;
-        break;
-      case ',':
-        drawLetter(comma, 4, color[i], offset);
-        offset+=4;
-        break;
-      case '*':
-        drawLetter(star, 7, color[i], offset);
-        offset+=7;
-        break;
-      case '/':
-        drawLetter(slash, 7, color[i], offset);
-        offset+=7;
-        break;
-      case '-':
-        drawLetter(minus, 8, color[i], offset);
-        offset+=8;
-        break;
-      case '+':
-        drawLetter(plus, 8, color[i], offset);
-        offset+=8;
-        break;
-      case '=':
-        drawLetter(equals, 8, color[i], offset);
-        offset+=8;
-        break;
-      case 'p': //π
-        drawLetter(pi, 14, color[i], offset);
-        offset+=14;
-        break;
-      case 'i': //Integrand
-        drawLetter(integrand, 8, color[i], offset);
-        offset+=8;
-        break;
-      case '(':
-        drawLetter(lPara, 5, color[i], offset);
-        offset+=5;
-        break;
-      case ')':
-        drawLetter(rPara, 5, color[i], offset);
-        offset+=5;
-        break;
-      default:
-        Matrix.fillScreen(Matrix.Color333(7, 0, 0));
-        delay(10);
-        Matrix.fillScreen(Matrix.Color333(0, 0, 0));
-        delay(10);
-        Matrix.fillScreen(Matrix.Color333(7, 0, 0));
-        delay(10);
-        Matrix.fillScreen(Matrix.Color333(0, 0, 0));
-        delay(10);
-        Matrix.fillScreen(Matrix.Color333(7, 0, 0));
-        delay(10);
-        Matrix.fillScreen(Matrix.Color333(0, 0, 0));
-        delay(10);
-        Matrix.fillScreen(Matrix.Color333(7, 0, 0));
-        delay(10);
-        Matrix.fillScreen(Matrix.Color333(0, 0, 0));
-        delay(10);
-        Matrix.fillScreen(Matrix.Color333(7, 0, 0));
-        delay(10);
-        Matrix.fillScreen(Matrix.Color333(0, 0, 0));
-        delay(10);
-        Matrix.fillScreen(Matrix.Color333(7, 0, 0));
-        delay(10);
-        Matrix.fillScreen(Matrix.Color333(0, 0, 0));
-        delay(10);
-    }
+  /*
+  *str is the string
+  *color is the color
+  len is the color string's length
+  leftCol is where to start
+  offset is used recursively -- how far over
+  i is used recursively -- which letter
+  */
+  switch(str[i]) {
+    case 'A':
+      drawLetter(letterA, 12, color[i], offset);
+      offset+=12;
+      break;
+    case 'B':
+      drawLetter(letterB, 10, color[i], offset);
+      offset+=10;
+      break;
+    case 'C':
+      drawLetter(letterC, 12, color[i], offset);
+      offset+=12;
+      break;
+    case 'D':
+      drawLetter(letterD, 12, color[i], offset);
+      offset+=12;
+      break;
+    case 'E':
+      drawLetter(letterE, 12, color[i], offset);
+      offset+=12;
+      break;
+    case 'F':
+      drawLetter(letterF, 13, color[i], offset);
+      offset+=13;
+      break;
+    case 'G':
+      drawLetter(letterG, 12, color[i], offset);
+      offset+=12;
+      break;
+    case 'H':
+      drawLetter(letterH, 12, color[i], offset);
+      offset+=12;
+      break;
+    case 'I':
+      drawLetter(letterI, 10, color[i], offset);
+      offset+=10;
+      break;
+    case 'J':
+      drawLetter(letterJ, 11, color[i], offset);
+      offset+=11;
+      break;
+    case 'K':
+      drawLetter(letterK, 12, color[i], offset);
+      offset+=12;
+      break;
+    case 'L':
+      drawLetter(letterL, 10, color[i], offset);
+      offset+=10;
+      break;
+    case 'M':
+      drawLetter(letterM, 16, color[i], offset);
+      offset+=16;
+      break;
+    case 'N':
+      drawLetter(letterN, 14, color[i], offset);
+      offset+=14;
+      break;
+    case 'O':
+      drawLetter(letterO, 14, color[i], offset);
+      offset+=14;
+      break;
+    case 'P':
+      drawLetter(letterP, 11, color[i], offset);
+      offset+=11;
+      break;
+    case 'Q':
+      drawLetter(letterQ, 12, color[i], offset);
+      offset+=12;
+      break;
+    case 'R':
+      drawLetter(letterR, 13, color[i], offset);
+      offset+=13;
+      break;
+    case 'S':
+      drawLetter(letterS, 14, color[i], offset);
+      offset+=14;
+      break;
+    case 'T':
+      drawLetter(letterT, 16, color[i], offset);
+      offset+=16;
+      break;
+    case 'U':
+      drawLetter(letterU, 13, color[i], offset);
+      offset+=13;
+      break;
+    case 'V':
+      drawLetter(letterV, 13, color[i], offset);
+      offset+=13;
+      break;
+    case 'W':
+      drawLetter(letterW, 16, color[i], offset);
+      offset+=16;
+      break;
+    case 'X':
+      drawLetter(letterX, 10, color[i], offset);
+      offset+=10;
+      break;
+    case 'Y':
+      drawLetter(letterY, 12, color[i], offset);
+      offset+=12;
+      break;
+    case 'Z':
+      drawLetter(letterZ, 12, color[i], offset);
+      offset+=12;
+      break;
+    case ' ':
+      drawLetter(space, 16, color[i], offset);
+      offset+=16;
+      break;
+    case '0':
+      drawLetter(letter0, 12, color[i], offset);
+      offset+=12;
+      break;
+    case '1':
+      drawLetter(letter1, 12, color[i], offset);
+      offset+=12;
+      break;
+    case '2':
+      drawLetter(letter2, 13, color[i], offset);
+      offset+=13;
+      break;
+    case '3':
+      drawLetter(letter3, 14, color[i], offset);
+      offset+=14;
+      break;
+    case '4':
+      drawLetter(letter4, 12, color[i], offset);
+      offset+=12;
+      break;
+    case '5':
+      drawLetter(letter5, 14, color[i], offset);
+      offset+=14;
+      break;
+    case '6':
+      drawLetter(letter6, 14, color[i], offset);
+      offset+=14;
+      break;
+    case '7':
+      drawLetter(letter7, 14, color[i], offset);
+      offset+=14;
+      break;
+    case '8':
+      drawLetter(letter8, 12, color[i], offset);
+      offset+=12;
+      break;
+    case '9':
+      drawLetter(letter9, 10, color[i], offset);
+      offset+=10;
+      break;
+    case '!':
+      drawLetter(exclamation, 4, color[i], offset);
+      offset+=4;
+      break;
+    case '?':
+      drawLetter(question, 10, color[i], offset);
+      offset+=10;
+      break;
+    case '.':
+      drawLetter(period, 4, color[i], offset);
+      offset+=4;
+      break;
+    case ',':
+      drawLetter(comma, 4, color[i], offset);
+      offset+=4;
+      break;
+    case '*':
+      drawLetter(star, 7, color[i], offset);
+      offset+=7;
+      break;
+    case '/':
+      drawLetter(slash, 7, color[i], offset);
+      offset+=7;
+      break;
+    case '-':
+      drawLetter(minus, 8, color[i], offset);
+      offset+=8;
+      break;
+    case '+':
+      drawLetter(plus, 8, color[i], offset);
+      offset+=8;
+      break;
+    case '=':
+      drawLetter(equals, 8, color[i], offset);
+      offset+=8;
+      break;
+    case 'p': //π
+      drawLetter(pi, 14, color[i], offset);
+      offset+=14;
+      break;
+    case 'i': //Integrand
+      drawLetter(integrand, 8, color[i], offset);
+      offset+=8;
+      break;
+    case '(':
+      drawLetter(lPara, 5, color[i], offset);
+      offset+=5;
+      break;
+    case ')':
+      drawLetter(rPara, 5, color[i], offset);
+      offset+=5;
+      break;
+    default:
+      Matrix.fillScreen(Matrix.Color333(7, 0, 0));
+      delay(10);
+      Matrix.fillScreen(Matrix.Color333(0, 0, 0));
+      delay(10);
+      Matrix.fillScreen(Matrix.Color333(7, 0, 0));
+      delay(10);
+      Matrix.fillScreen(Matrix.Color333(0, 0, 0));
+      delay(10);
+      Matrix.fillScreen(Matrix.Color333(7, 0, 0));
+      delay(10);
+      Matrix.fillScreen(Matrix.Color333(0, 0, 0));
+      delay(10);
+      Matrix.fillScreen(Matrix.Color333(7, 0, 0));
+      delay(10);
+      Matrix.fillScreen(Matrix.Color333(0, 0, 0));
+      delay(10);
+      Matrix.fillScreen(Matrix.Color333(7, 0, 0));
+      delay(10);
+      Matrix.fillScreen(Matrix.Color333(0, 0, 0));
+      delay(10);
+      Matrix.fillScreen(Matrix.Color333(7, 0, 0));
+      delay(10);
+      Matrix.fillScreen(Matrix.Color333(0, 0, 0));
+      delay(10);
   }
-  colLength = offset;
+  i++;
 }
 
 void drawLetter(unsigned short *col, char arrayLength, unsigned short color, int leftCol) {
@@ -334,12 +332,7 @@ void setup() {
   Matrix.begin();
 }
 void loop() {
-  for(int i=40; i>-colLength-10; i--) {
-    drawLetter(space, 16, 0, i);
-    drawLetter(space, 16, 0, i+16);
-    drawLetter(space, 16, 0, i+32);
-    drawLetter(space, 16, 0, i+48);
-    drawString(inputString, colorArray, 11, i+64);
-    delay(10);
+  for(int n=0; n<length; n++) {
+    drawString(inputString, colorArray, 2, 0);
   }
 }
